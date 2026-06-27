@@ -65,6 +65,66 @@
         padding: 42px 0;
       }
 
+      .site-header {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 18px 0 0;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 14px 18px;
+        border: 1px solid rgba(31, 37, 35, 0.11);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 10px 30px rgba(31, 37, 35, 0.08);
+      }
+
+      .nav-brand {
+        flex: 0 0 auto;
+        color: var(--accent-dark);
+        font-size: 1rem;
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        overflow-x: auto;
+        list-style: none;
+        scrollbar-width: none;
+      }
+
+      .nav-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 36px;
+        padding: 0 12px;
+        border-radius: 6px;
+        color: var(--ink);
+        font-size: 0.92rem;
+        font-weight: 800;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus-visible {
+        background: rgba(182, 95, 114, 0.12);
+        color: var(--accent-dark);
+      }
+
       .page-stack {
         display: grid;
         gap: 28px;
@@ -297,6 +357,21 @@
           padding: 10px 0;
         }
 
+        .site-header {
+          width: min(100% - 20px, 640px);
+          padding-top: 10px;
+        }
+
+        .nav-bar {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 14px;
+        }
+
+        .nav-links {
+          width: 100%;
+        }
+
         .location-shell {
           grid-template-columns: 1fr;
           min-height: auto;
@@ -329,9 +404,22 @@
     </style>
   </head>
   <body>
+    <header class="site-header" id="home">
+      <nav class="nav-bar" aria-label="Ana menü">
+        <a class="nav-brand" href="#home">AŞK BEAUTY</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#sertifikalar">Sertifikalar</a></li>
+          <li><a href="#konum">Konum</a></li>
+          <li><a href="https://wa.me/905536412171" target="_blank" rel="noopener">Randevu</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
       <div class="page-stack">
-        <section class="location-shell" aria-label="AŞK BEAUTY konumu">
+        <section class="location-shell" id="konum" aria-label="AŞK BEAUTY konumu">
           <div class="details">
             <div>
               <p class="eyebrow">Konum</p>
@@ -394,7 +482,7 @@
           </div>
         </section>
 
-        <section class="content-section" aria-labelledby="about-title">
+        <section class="content-section" id="hakkimizda" aria-labelledby="about-title">
           <p class="section-kicker">Hakkımızda</p>
           <h2 class="section-title" id="about-title">Uzman dokunuş, özenli sonuç</h2>
           <p class="section-copy">
@@ -410,7 +498,7 @@
           </ul>
         </section>
 
-        <section class="content-section" aria-labelledby="certificates-title">
+        <section class="content-section" id="sertifikalar" aria-labelledby="certificates-title">
           <p class="section-kicker">Sertifikalar</p>
           <h2 class="section-title" id="certificates-title">Eğitim ve uzmanlık belgeleri</h2>
           <p class="section-copy">
