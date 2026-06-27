@@ -3,10 +3,10 @@ export const serviceCategories = [
     id: "kalici-makyaj",
     title: "Kalıcı Makyaj",
     summary: "Yüz ifadesini doğal biçimde güçlendiren, uzman analizle planlanan kalıcı uygulamalar.",
-    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035a?auto=format&fit=crop&w=900&q=85",
     services: [
       {
-        name: "PhiBrows Microblading",
+        name: "PhiBrows Microblading (Kıl Tekniği)",
         description: "Altın oran prensibiyle kaş formunu belirginleştiren doğal kıl tekniği uygulaması."
       },
       {
@@ -23,22 +23,22 @@ export const serviceCategories = [
     id: "kas-kirpik",
     title: "Kaş & Kirpik",
     summary: "Bakışları daha dengeli, canlı ve estetik gösteren profesyonel kaş ve kirpik işlemleri.",
-    image: "https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&w=900&q=85",
+    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=85",
     services: [
       {
         name: "Altın Oran Kaş Tasarımı",
         description: "Yüz hattınıza göre ölçümlenen, doğal ve dengeli kaş tasarımı."
       },
       {
-        name: "İpek Kirpik",
+        name: "İpek Kirpik Uygulaması",
         description: "Kirpik yoğunluğunu ve uzunluğunu zarif biçimde artıran konforlu uygulama."
       },
       {
-        name: "MY LAMINATION Kaş Laminasyonu Vegan",
+        name: "My Lamination Kaş Laminasyonu",
         description: "Vegan içerikle kaşları yukarı yönlü, dolgun ve düzenli gösteren bakım."
       },
       {
-        name: "MY LAMINATION Kirpik Laminasyonu Vegan",
+        name: "My Lamination Kirpik Laminasyonu",
         description: "Kirpiklere kıvrım, parlaklık ve bakım etkisi sağlayan vegan laminasyon."
       }
     ]
@@ -47,12 +47,8 @@ export const serviceCategories = [
     id: "cilt-bakimi",
     title: "Cilt Bakımı",
     summary: "Cilt ihtiyacına göre analiz edilen, nem, ışıltı ve yenilenme odaklı bakım protokolleri.",
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85",
     services: [
-      {
-        name: "Casmara Bakımları",
-        description: "Cilt ihtiyacına göre seçilen profesyonel Casmara protokolleriyle yoğun bakım deneyimi."
-      },
       {
         name: "Klasik Cilt Bakımı",
         description: "Temizleme, nemlendirme ve rahatlatma adımlarıyla düzenli bakım rutini."
@@ -62,7 +58,11 @@ export const serviceCategories = [
         description: "Cilt tipine ve ihtiyacına göre planlanan ileri seviye bakım uygulamaları."
       },
       {
-        name: "Kore Cam Cilt",
+        name: "Casmara Cilt Bakımları",
+        description: "Cilt ihtiyacına göre seçilen profesyonel Casmara protokolleriyle yoğun bakım deneyimi."
+      },
+      {
+        name: "Kore Cam Cilt Uygulamaları",
         description: "Pürüzsüz, nemli ve aydınlık görünüm hedefleyen çok adımlı bakım."
       }
     ]
@@ -71,7 +71,7 @@ export const serviceCategories = [
     id: "tirnak",
     title: "Tırnak",
     summary: "Bakımlı eller için modern formlar, kalıcı görünüm ve zarif nail art detayları.",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85",
+    image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85",
     services: [
       {
         name: "Protez Tırnak",
@@ -94,7 +94,7 @@ export const serviceCategories = [
     image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85",
     services: [
       {
-        name: "Meridyen Terapisi",
+        name: "Meridyen Terapisi (Çok Yakında)",
         description: "Enerji dengesi ve rahatlama odağıyla yakında randevu sistemine eklenecek."
       }
     ]
@@ -110,12 +110,12 @@ export const featuredGallery = [
   {
     title: "Kaş Tasarımı",
     label: "Brow",
-    image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=85"
+    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85"
   },
   {
     title: "Kirpik",
     label: "Lash",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85"
+    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=85"
   },
   {
     title: "Tırnak",
