@@ -65,6 +65,11 @@
         padding: 42px 0;
       }
 
+      .page-stack {
+        display: grid;
+        gap: 28px;
+      }
+
       .location-shell {
         display: grid;
         grid-template-columns: minmax(280px, 0.82fr) minmax(320px, 1.18fr);
@@ -194,6 +199,98 @@
         border: 0;
       }
 
+      .content-section {
+        padding: clamp(32px, 6vw, 64px);
+        border: 1px solid rgba(31, 37, 35, 0.1);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 12px 34px rgba(31, 37, 35, 0.08);
+      }
+
+      .section-kicker {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .section-title {
+        margin: 0;
+        color: var(--accent-dark);
+        font-size: clamp(1.9rem, 4vw, 3.2rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .section-copy {
+        max-width: 740px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 1.8vw, 1.16rem);
+        line-height: 1.7;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin: 28px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .service-grid li {
+        min-height: 70px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--ink);
+        font-weight: 800;
+      }
+
+      .certificate-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .certificate {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      .certificate img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1.4;
+        object-fit: contain;
+        background: #fff;
+      }
+
+      .certificate figcaption {
+        padding: 16px 18px 18px;
+        border-top: 1px solid var(--line);
+      }
+
+      .certificate strong {
+        display: block;
+        color: var(--accent-dark);
+        font-size: 1.02rem;
+      }
+
+      .certificate span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
       @media (max-width: 820px) {
         main {
           width: min(100% - 20px, 640px);
@@ -219,73 +316,139 @@
         .button {
           flex: 1 1 180px;
         }
+
+        .content-section {
+          padding: 30px 22px;
+        }
+
+        .service-grid,
+        .certificate-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
     <main>
-      <section class="location-shell" aria-label="AŞK BEAUTY konumu">
-        <div class="details">
-          <div>
-            <p class="eyebrow">Konum</p>
-            <h1 class="brand">AŞK BEAUTY</h1>
+      <div class="page-stack">
+        <section class="location-shell" aria-label="AŞK BEAUTY konumu">
+          <div class="details">
+            <div>
+              <p class="eyebrow">Konum</p>
+              <h1 class="brand">AŞK BEAUTY</h1>
+            </div>
+
+            <p class="address">
+              Turgut Özal Bulvarı, Fatih Mahallesi, Palmiye Meydanı 37/D,
+              Büyükçekmece / İstanbul
+            </p>
+
+            <a class="website" href="https://askbeautyexclusive.com/" target="_blank" rel="noopener">
+              askbeautyexclusive.com
+            </a>
+
+            <ul class="contact-list" aria-label="İletişim bilgileri">
+              <li>
+                <a href="https://www.instagram.com/make.upbysebnemkaymaz/" target="_blank" rel="noopener">
+                  Instagram: make.upbysebnemkaymaz
+                </a>
+              </li>
+              <li>
+                <a href="tel:+905536412171">Telefon: +90 553 641 21 71</a>
+              </li>
+              <li>
+                <a href="https://wa.me/905536412171" target="_blank" rel="noopener">
+                  WhatsApp: +90 553 641 21 71
+                </a>
+              </li>
+            </ul>
+
+            <div class="actions" aria-label="Konum bağlantıları">
+              <a
+                class="button primary"
+                href="https://www.google.com/maps/search/?api=1&query=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul"
+                target="_blank"
+                rel="noopener"
+              >
+                Yol Tarifi Al
+              </a>
+              <a
+                class="button"
+                href="https://maps.apple.com/?q=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul"
+                target="_blank"
+                rel="noopener"
+              >
+                Apple Maps
+              </a>
+            </div>
           </div>
 
-          <p class="address">
-            Turgut Özal Bulvarı, Fatih Mahallesi, Palmiye Meydanı 37/D,
-            Büyükçekmece / İstanbul
+          <div class="map-panel">
+            <iframe
+              title="AŞK BEAUTY harita konumu"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul&output=embed"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="about-title">
+          <p class="section-kicker">Hakkımızda</p>
+          <h2 class="section-title" id="about-title">Uzman dokunuş, özenli sonuç</h2>
+          <p class="section-copy">
+            AŞK BEAUTY, Büyükçekmece'de makyaj ve güzellik uygulamalarında kişiye özel,
+            temiz ve özenli bir deneyim sunar. Şebnem Kaymaz'ın eğitimleri ve artist
+            uzmanlığıyla her uygulama yüz hatları, cilt tonu ve özel gün beklentisine göre planlanır.
           </p>
 
-          <a class="website" href="https://askbeautyexclusive.com/" target="_blank" rel="noopener">
-            askbeautyexclusive.com
-          </a>
-
-          <ul class="contact-list" aria-label="İletişim bilgileri">
-            <li>
-              <a href="https://www.instagram.com/make.upbysebnemkaymaz/" target="_blank" rel="noopener">
-                Instagram: make.upbysebnemkaymaz
-              </a>
-            </li>
-            <li>
-              <a href="tel:+905536412171">Telefon: +90 553 641 21 71</a>
-            </li>
-            <li>
-              <a href="https://wa.me/905536412171" target="_blank" rel="noopener">
-                WhatsApp: +90 553 641 21 71
-              </a>
-            </li>
+          <ul class="service-grid" aria-label="Hizmet alanları">
+            <li>Profesyonel makyaj</li>
+            <li>Gelin makyajı</li>
+            <li>Kaş ve kirpik uygulamaları</li>
           </ul>
+        </section>
 
-          <div class="actions" aria-label="Konum bağlantıları">
-            <a
-              class="button primary"
-              href="https://www.google.com/maps/search/?api=1&query=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul"
-              target="_blank"
-              rel="noopener"
-            >
-              Yol Tarifi Al
-            </a>
-            <a
-              class="button"
-              href="https://maps.apple.com/?q=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul"
-              target="_blank"
-              rel="noopener"
-            >
-              Apple Maps
-            </a>
+        <section class="content-section" aria-labelledby="certificates-title">
+          <p class="section-kicker">Sertifikalar</p>
+          <h2 class="section-title" id="certificates-title">Eğitim ve uzmanlık belgeleri</h2>
+          <p class="section-copy">
+            Tamamlanan eğitimler ve artist belgeleri, uygulamalarda kullanılan tekniğin ve
+            profesyonel yaklaşımın temelini oluşturur.
+          </p>
+
+          <div class="certificate-grid">
+            <figure class="certificate">
+              <img
+                src="assets/certificates/my-lamination-asiye-sebnem-kaymaz.jpeg"
+                alt="MY Lamination Asiye Şebnem Kaymaz sertifika görseli"
+                width="1260"
+                height="889"
+                loading="lazy"
+              >
+              <figcaption>
+                <strong>MY Lamination</strong>
+                <span>Asiye Şebnem Kaymaz</span>
+              </figcaption>
+            </figure>
+
+            <figure class="certificate">
+              <img
+                src="assets/certificates/philips-sebnem-kaymaz-artist.jpeg"
+                alt="Philips Şebnem Kaymaz Artist sertifika görseli"
+                width="1260"
+                height="906"
+                loading="lazy"
+              >
+              <figcaption>
+                <strong>Philips Artist</strong>
+                <span>Şebnem Kaymaz</span>
+              </figcaption>
+            </figure>
           </div>
-        </div>
-
-        <div class="map-panel">
-          <iframe
-            title="AŞK BEAUTY harita konumu"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul&output=embed"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   </body>
 </html>
