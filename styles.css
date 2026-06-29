@@ -618,6 +618,79 @@ h1 {
   color: var(--muted);
 }
 
+.experience-section {
+  padding-top: 42px;
+}
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
+  gap: 16px;
+}
+
+.journey-panel,
+.faq-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.journey-step {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 18px;
+  min-height: 126px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  border-radius: 8px;
+  background: rgba(255, 253, 251, 0.78);
+  box-shadow: 0 16px 52px rgba(80, 52, 82, 0.08);
+}
+
+.journey-step > span {
+  display: inline-grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(200, 164, 93, 0.34);
+  border-radius: 50%;
+  color: var(--gold-dark);
+  background: rgba(200, 164, 93, 0.12);
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.journey-step h3 {
+  color: var(--ink);
+  font-size: 30px;
+  line-height: 1;
+}
+
+.journey-step p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.faq-panel details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 251, 0.72);
+  box-shadow: 0 14px 40px rgba(80, 52, 82, 0.07);
+}
+
+.faq-panel summary {
+  cursor: pointer;
+  padding: 20px 22px;
+  color: var(--plum);
+  font-weight: 850;
+}
+
+.faq-panel p {
+  margin: 0;
+  padding: 0 22px 22px;
+  color: var(--muted);
+}
+
 .gallery-section {
   padding-top: 42px;
 }
@@ -956,6 +1029,7 @@ h1 {
   .cta-section,
   .certificate-gallery,
   .expert-section,
+  .experience-layout,
   .expert-principles {
     grid-template-columns: 1fr;
   }
@@ -1059,5 +1133,9 @@ h1 {
 
   .floating-actions a {
     min-height: 44px;
+  }
+
+  .journey-step {
+    grid-template-columns: 1fr;
   }
 }

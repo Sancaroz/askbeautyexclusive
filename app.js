@@ -6,6 +6,7 @@ import { ServiceCard } from "./components/ServiceCard.js";
 import { ExpertProfile } from "./components/ExpertProfile.js";
 import { Gallery } from "./components/Gallery.js";
 import { ProductPreview } from "./components/ProductPreview.js";
+import { Experience } from "./components/Experience.js";
 import { CTA } from "./components/CTA.js";
 import { Footer } from "./components/Footer.js";
 
@@ -145,6 +146,7 @@ document.querySelector("#app").innerHTML = `
     ${renderServiceCategories()}
     ${renderWhy()}
     ${ExpertProfile()}
+    ${Experience()}
     ${renderCredentials()}
     ${Gallery(featuredGallery)}
     ${ProductPreview()}
