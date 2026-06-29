@@ -3,7 +3,7 @@ export const serviceCategories = [
     id: "kalici-makyaj",
     title: "Kalıcı Makyaj",
     summary: "Yüz ifadesini doğal biçimde güçlendiren, uzman analizle planlanan kalıcı uygulamalar.",
-    image: "assets/gallery/1.jpeg",
+    image: "assets/gallery/20.jpeg",
     services: [
       {
         name: "PhiBrows Microblading (Kıl Tekniği)",
@@ -23,7 +23,7 @@ export const serviceCategories = [
     id: "kas-kirpik",
     title: "Kaş & Kirpik",
     summary: "Bakışları daha dengeli, canlı ve estetik gösteren profesyonel kaş ve kirpik işlemleri.",
-    image: "assets/gallery/4.jpeg",
+    image: "assets/gallery/14.jpeg",
     services: [
       {
         name: "Altın Oran Kaş Tasarımı",
@@ -113,9 +113,39 @@ export const featuredGallery = [
     image: "assets/gallery/2.jpeg"
   },
   {
+    title: "Dudak Renklendirme",
+    label: "Lips",
+    image: "assets/gallery/19.jpeg"
+  },
+  {
+    title: "Dudak Renklendirme",
+    label: "Lips",
+    image: "assets/gallery/20.jpeg"
+  },
+  {
+    title: "Dudak Renklendirme",
+    label: "Lips",
+    image: "assets/gallery/21.jpeg"
+  },
+  {
     title: "Kalıcı Eyeliner",
     label: "Eyeliner",
     image: "assets/gallery/6.jpeg"
+  },
+  {
+    title: "Kalıcı Eyeliner",
+    label: "Eyeliner",
+    image: "assets/gallery/16.jpeg"
+  },
+  {
+    title: "Kalıcı Eyeliner",
+    label: "Eyeliner",
+    image: "assets/gallery/17.jpeg"
+  },
+  {
+    title: "Kalıcı Eyeliner",
+    label: "Eyeliner",
+    image: "assets/gallery/18.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",
@@ -131,6 +161,16 @@ export const featuredGallery = [
     title: "İpek Kirpik",
     label: "Lash",
     image: "assets/gallery/4.jpeg"
+  },
+  {
+    title: "İpek Kirpik",
+    label: "Lash",
+    image: "assets/gallery/14.jpeg"
+  },
+  {
+    title: "İpek Kirpik",
+    label: "Lash",
+    image: "assets/gallery/15.jpeg"
   },
   {
     title: "Protez Tırnak",
