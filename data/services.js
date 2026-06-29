@@ -3,7 +3,7 @@ export const serviceCategories = [
     id: "kalici-makyaj",
     title: "Kalıcı Makyaj",
     summary: "Yüz ifadesini doğal biçimde güçlendiren, uzman analizle planlanan kalıcı uygulamalar.",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035a?auto=format&fit=crop&w=900&q=85",
+    image: "assets/gallery/1.jpeg",
     services: [
       {
         name: "PhiBrows Microblading (Kıl Tekniği)",
@@ -23,7 +23,7 @@ export const serviceCategories = [
     id: "kas-kirpik",
     title: "Kaş & Kirpik",
     summary: "Bakışları daha dengeli, canlı ve estetik gösteren profesyonel kaş ve kirpik işlemleri.",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=85",
+    image: "assets/gallery/4.jpeg",
     services: [
       {
         name: "Altın Oran Kaş Tasarımı",
@@ -71,7 +71,7 @@ export const serviceCategories = [
     id: "tirnak",
     title: "Tırnak",
     summary: "Bakımlı eller için modern formlar, kalıcı görünüm ve zarif nail art detayları.",
-    image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85",
+    image: "assets/gallery/8.jpeg",
     services: [
       {
         name: "Protez Tırnak",
@@ -103,35 +103,69 @@ export const serviceCategories = [
 
 export const featuredGallery = [
   {
-    title: "Sertifika Duvarı",
-    label: "AŞK Beauty",
-    image: "assets/certificates/ask-beauty-certificate-wall.png",
-    fit: "contain"
+    title: "Dudak Renklendirme",
+    label: "Lips",
+    image: "assets/gallery/1.jpeg"
   },
   {
-    title: "PhiBrows Artist",
+    title: "Dudak Renklendirme",
+    label: "Lips",
+    image: "assets/gallery/2.jpeg"
+  },
+  {
+    title: "Kalıcı Eyeliner",
+    label: "Eyeliner",
+    image: "assets/gallery/6.jpeg"
+  },
+  {
+    title: "Kalıcı Eyeliner",
+    label: "Eyeliner",
+    image: "assets/gallery/3.jpeg"
+  },
+  {
+    title: "Kalıcı Eyeliner",
+    label: "Eyeliner",
+    image: "assets/gallery/7.jpeg"
+  },
+  {
+    title: "İpek Kirpik",
+    label: "Lash",
+    image: "assets/gallery/4.jpeg"
+  },
+  {
+    title: "Protez Tırnak",
+    label: "Nail",
+    image: "assets/gallery/8.jpeg"
+  },
+  {
+    title: "Jel Tırnak",
+    label: "Nail",
+    image: "assets/gallery/5.jpeg"
+  },
+  {
+    title: "Nail Art",
+    label: "Nail Art",
+    image: "assets/gallery/9.jpeg"
+  },
+  {
+    title: "Nail Art",
+    label: "Nail Art",
+    image: "assets/gallery/11.jpeg"
+  },
+  {
+    title: "Nail Art",
+    label: "Nail Art",
+    image: "assets/gallery/12.jpeg"
+  },
+  {
+    title: "Jel Tırnak",
+    label: "Nail",
+    image: "assets/gallery/13.jpeg"
+  },
+  {
+    title: "PhiBrows Artist Sertifikası",
     label: "Certificate",
     image: "assets/certificates/phibrows-artist-asiye-sebnem-kaymaz.jpeg",
     fit: "contain"
-  },
-  {
-    title: "Cilt Bakımı",
-    label: "Glow",
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=700&q=85"
-  },
-  {
-    title: "Kaş Tasarımı",
-    label: "Brow",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85"
-  },
-  {
-    title: "Kirpik",
-    label: "Lash",
-    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=85"
-  },
-  {
-    title: "Tırnak",
-    label: "Nail",
-    image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=85"
   }
 ];
