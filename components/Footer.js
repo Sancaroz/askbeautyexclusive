@@ -13,6 +13,12 @@ export function Footer() {
         <a href="${business.instagramUrl}" target="_blank" rel="noreferrer"><span>Instagram</span><strong>${business.instagramHandle}</strong></a>
         <a href="${business.yandexMapUrl}" target="_blank" rel="noreferrer"><span>Yandex Harita</span><strong>${business.address}</strong></a>
       </div>
+      <div class="visit-info-grid" aria-label="Çalışma ve randevu bilgileri">
+        <div><span>Çalışma Saatleri</span><strong>${business.workingHours}</strong></div>
+        <div><span>Randevu</span><strong>${business.appointmentPolicy}</strong></div>
+        <div><span>Ön Ödeme</span><strong>${business.paymentPolicy}</strong></div>
+        <div><span>Kapalı Gün</span><strong>${business.closedDays}</strong></div>
+      </div>
       <div class="map-placeholder" aria-label="Google Maps konum alanı">
         <iframe
           title="AŞK Beauty Google Maps konumu"

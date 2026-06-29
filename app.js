@@ -7,6 +7,7 @@ import { ExpertProfile } from "./components/ExpertProfile.js";
 import { Gallery } from "./components/Gallery.js";
 import { ProductPreview } from "./components/ProductPreview.js";
 import { Experience } from "./components/Experience.js";
+import { Testimonials } from "./components/Testimonials.js";
 import { CTA } from "./components/CTA.js";
 import { Footer } from "./components/Footer.js";
 
@@ -149,6 +150,7 @@ document.querySelector("#app").innerHTML = `
     ${Experience()}
     ${renderCredentials()}
     ${Gallery(featuredGallery)}
+    ${Testimonials()}
     ${ProductPreview()}
     ${CTA()}
   </main>
