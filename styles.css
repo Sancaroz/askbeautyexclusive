@@ -457,6 +457,12 @@ h1 {
   gap: 24px;
 }
 
+.certificate-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 16px;
+}
+
 .certificate-wall {
   overflow: hidden;
   margin: 0;
@@ -470,7 +476,8 @@ h1 {
   display: block;
   width: 100%;
   aspect-ratio: 1.25;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--white);
 }
 
 .certificate-wall figcaption {
@@ -704,7 +711,8 @@ h1 {
 
   .service-group-head,
   .why-section,
-  .cta-section {
+  .cta-section,
+  .certificate-gallery {
     grid-template-columns: 1fr;
   }
 

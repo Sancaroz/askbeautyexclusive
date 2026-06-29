@@ -11,7 +11,7 @@ export function Footer() {
         <a href="${business.whatsappUrl}" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>${business.phoneDisplay}</strong></a>
         <a href="tel:${business.phoneHref}"><span>Telefon</span><strong>${business.phoneDisplay}</strong></a>
         <a href="${business.instagramUrl}" target="_blank" rel="noreferrer"><span>Instagram</span><strong>${business.instagramHandle}</strong></a>
-        <div><span>Adres</span><strong>${business.address}</strong></div>
+        <a href="${business.yandexMapUrl}" target="_blank" rel="noreferrer"><span>Yandex Harita</span><strong>${business.address}</strong></a>
       </div>
       <div class="map-placeholder" aria-label="Google Maps konum alanı">
         <iframe

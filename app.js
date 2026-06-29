@@ -92,19 +92,34 @@ function renderCredentials() {
         <h2>Eğitim, uygulama ve teknik uzmanlığı tek merkezde buluşturan deneyim.</h2>
         <span>AŞK Beauty sertifika duvarı, uygulamaların eğitim ve uzmanlık temelini görünür kılar.</span>
       </div>
-      <figure class="certificate-wall">
-        <img
-          src="assets/certificates/ask-beauty-certificate-wall.png"
-          alt="AŞK Beauty sertifika duvarı ve uzmanlık belgeleri"
-          width="1402"
-          height="1122"
-          loading="lazy"
-        >
-        <figcaption>
-          <strong>Asiye Şebnem Kaymaz</strong>
-          <span>Uzman estetisyen, artist ve eğitim belgeleri</span>
-        </figcaption>
-      </figure>
+      <div class="certificate-gallery">
+        <figure class="certificate-wall">
+          <img
+            src="assets/certificates/ask-beauty-certificate-wall.png"
+            alt="AŞK Beauty sertifika duvarı ve uzmanlık belgeleri"
+            width="1402"
+            height="1122"
+            loading="lazy"
+          >
+          <figcaption>
+            <strong>AŞK Beauty sertifika duvarı</strong>
+            <span>Uzmanlık ve artist belgeleri</span>
+          </figcaption>
+        </figure>
+        <figure class="certificate-wall">
+          <img
+            src="assets/certificates/phibrows-artist-asiye-sebnem-kaymaz.jpeg"
+            alt="PhiBrows Artist Asiye Şebnem Kaymaz sertifikası"
+            width="1200"
+            height="855"
+            loading="lazy"
+          >
+          <figcaption>
+            <strong>PhiBrows Artist</strong>
+            <span>Asiye Şebnem Kaymaz</span>
+          </figcaption>
+        </figure>
+      </div>
       <div class="credential-tags">
         ${credentials.map(item => `<span>${item}</span>`).join("")}
       </div>
