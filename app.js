@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero.js";
 import { ServiceCard } from "./components/ServiceCard.js";
 import { ExpertProfile } from "./components/ExpertProfile.js";
 import { Gallery } from "./components/Gallery.js";
+import { ProductPreview } from "./components/ProductPreview.js";
 import { CTA } from "./components/CTA.js";
 import { Footer } from "./components/Footer.js";
 
@@ -146,6 +147,7 @@ document.querySelector("#app").innerHTML = `
     ${ExpertProfile()}
     ${renderCredentials()}
     ${Gallery(featuredGallery)}
+    ${ProductPreview()}
     ${CTA()}
   </main>
   ${Footer()}

@@ -5,6 +5,7 @@ export function Header() {
     ["Hakkımızda", "#hakkimizda"],
     ["Uzman", "#uzman"],
     ["Galeri", "#galeri"],
+    ["Ürünler", "#urunler"],
     ["Randevu", "#randevu"],
     ["İletişim", "#iletisim"]
   ];
