@@ -6,6 +6,7 @@ export function ExpertProfile() {
       <div class="expert-content">
         <p class="eyebrow">Uzman Profil</p>
         <h2>${expert.name}</h2>
+        <span class="script-accent expert-signature">beauty artist</span>
         <strong>${expert.title}</strong>
         <p>${expert.intro}</p>
 

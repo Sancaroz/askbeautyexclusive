@@ -9,6 +9,7 @@ export function Hero() {
       <div class="hero-content">
         <p class="eyebrow">Premium güzellik merkezi</p>
         <h1>AŞK Beauty</h1>
+        <span class="script-accent hero-signature">by Asiye Şebnem Kaymaz</span>
         <p class="hero-text">Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamalarında profesyonel deneyim.</p>
         <div class="hero-proof">
           <span>PhiBrows Artist</span>
