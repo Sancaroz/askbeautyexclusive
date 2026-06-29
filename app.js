@@ -3,6 +3,7 @@ import { business } from "./data/business.js";
 import { Header } from "./components/Header.js";
 import { Hero } from "./components/Hero.js";
 import { ServiceCard } from "./components/ServiceCard.js";
+import { ExpertProfile } from "./components/ExpertProfile.js";
 import { Gallery } from "./components/Gallery.js";
 import { CTA } from "./components/CTA.js";
 import { Footer } from "./components/Footer.js";
@@ -142,6 +143,7 @@ document.querySelector("#app").innerHTML = `
     ${Hero()}
     ${renderServiceCategories()}
     ${renderWhy()}
+    ${ExpertProfile()}
     ${renderCredentials()}
     ${Gallery(featuredGallery)}
     ${CTA()}
