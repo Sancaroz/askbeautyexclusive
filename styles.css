@@ -158,6 +158,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .hero-media::after {
@@ -165,8 +166,8 @@ main {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(46, 36, 48, 0.78), rgba(46, 36, 48, 0.28) 58%, rgba(46, 36, 48, 0.08)),
-    linear-gradient(0deg, rgba(46, 36, 48, 0.28), transparent 48%);
+    linear-gradient(90deg, rgba(46, 36, 48, 0.82), rgba(46, 36, 48, 0.42) 54%, rgba(46, 36, 48, 0.12)),
+    linear-gradient(0deg, rgba(46, 36, 48, 0.34), transparent 48%);
 }
 
 .hero-content {
@@ -206,6 +207,27 @@ h1 {
   color: rgba(255, 250, 246, 0.9);
   font-size: clamp(18px, 2.1vw, 24px);
   line-height: 1.5;
+}
+
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.hero-proof span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(242, 214, 149, 0.38);
+  border-radius: 999px;
+  color: #fffaf6;
+  background: rgba(255, 253, 251, 0.1);
+  backdrop-filter: blur(12px);
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .hero-actions,
@@ -551,6 +573,17 @@ h1 {
   height: 100%;
   object-fit: cover;
   transition: transform 500ms ease;
+}
+
+.gallery-item.is-contain {
+  background:
+    linear-gradient(135deg, rgba(255, 253, 251, 0.92), rgba(247, 239, 232, 0.86)),
+    var(--white);
+}
+
+.gallery-item.is-contain img {
+  padding: 18px;
+  object-fit: contain;
 }
 
 .gallery-item:hover img {

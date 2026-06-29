@@ -103,6 +103,18 @@ export const serviceCategories = [
 
 export const featuredGallery = [
   {
+    title: "Sertifika Duvarı",
+    label: "AŞK Beauty",
+    image: "assets/certificates/ask-beauty-certificate-wall.png",
+    fit: "contain"
+  },
+  {
+    title: "PhiBrows Artist",
+    label: "Certificate",
+    image: "assets/certificates/phibrows-artist-asiye-sebnem-kaymaz.jpeg",
+    fit: "contain"
+  },
+  {
     title: "Cilt Bakımı",
     label: "Glow",
     image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=700&q=85"
@@ -121,15 +133,5 @@ export const featuredGallery = [
     title: "Tırnak",
     label: "Nail",
     image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=85"
-  },
-  {
-    title: "Kalıcı Makyaj",
-    label: "PMU",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035a?auto=format&fit=crop&w=700&q=85"
-  },
-  {
-    title: "Öncesi / Sonrası",
-    label: "Result",
-    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=700&q=85"
   }
 ];
