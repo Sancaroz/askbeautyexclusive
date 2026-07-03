@@ -2,7 +2,7 @@ import { business, whatsappMessage } from "../data/business.js";
 
 export function CTA() {
   return `
-    <section class="cta-section" id="randevu">
+    <section class="cta-section" id="randevu-cagri">
       <div>
         <p class="eyebrow">Randevu</p>
         <h2>Size en uygun uygulama için kişiye özel analizle başlayalım.</h2>

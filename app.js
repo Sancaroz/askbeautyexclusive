@@ -8,6 +8,7 @@ import { Gallery } from "./components/Gallery.js";
 import { ProductPreview } from "./components/ProductPreview.js";
 import { Experience } from "./components/Experience.js";
 import { Testimonials } from "./components/Testimonials.js";
+import { AppointmentHelper, initAppointmentHelper } from "./components/AppointmentHelper.js";
 import { CTA } from "./components/CTA.js";
 import { Footer } from "./components/Footer.js";
 
@@ -152,6 +153,7 @@ document.querySelector("#app").innerHTML = `
     ${Gallery(featuredGallery)}
     ${Testimonials()}
     ${ProductPreview()}
+    ${AppointmentHelper()}
     ${CTA()}
   </main>
   ${Footer()}
@@ -172,3 +174,5 @@ document.querySelectorAll(".main-nav a").forEach(link => {
     menuToggle?.classList.remove("is-open");
   });
 });
+
+initAppointmentHelper();

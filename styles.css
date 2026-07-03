@@ -952,6 +952,92 @@ h1 {
   font-weight: 700;
 }
 
+.appointment-helper {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.78fr);
+  gap: clamp(20px, 5vw, 58px);
+  align-items: center;
+}
+
+.appointment-copy {
+  display: grid;
+  gap: 14px;
+}
+
+.appointment-copy h2 {
+  color: var(--ink);
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 0.98;
+}
+
+.appointment-copy p:last-child {
+  max-width: 620px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.appointment-panel {
+  display: grid;
+  gap: 16px;
+  padding: clamp(22px, 4vw, 32px);
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  border-radius: 8px;
+  background: rgba(255, 253, 251, 0.82);
+  box-shadow: var(--shadow);
+}
+
+.appointment-panel label {
+  display: grid;
+  gap: 8px;
+}
+
+.appointment-panel label span,
+.appointment-panel p {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.appointment-panel select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--white);
+  font: inherit;
+  font-weight: 700;
+}
+
+.appointment-slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.appointment-slots button {
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--plum);
+  background: var(--white);
+  font-size: 13px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.appointment-slots button.is-active {
+  border-color: rgba(200, 164, 93, 0.48);
+  color: #2f2430;
+  background: linear-gradient(135deg, #f2d695, var(--gold));
+}
+
+.appointment-panel p {
+  margin: 0;
+}
+
 .cta-section {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1099,6 +1185,7 @@ h1 {
   .certificate-gallery,
   .expert-section,
   .experience-layout,
+  .appointment-helper,
   .expert-principles {
     grid-template-columns: 1fr;
   }
@@ -1199,6 +1286,10 @@ h1 {
   .service-actions,
   .floating-actions {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-slots {
     grid-template-columns: 1fr;
   }
 
