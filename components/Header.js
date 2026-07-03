@@ -3,6 +3,7 @@ export function Header() {
     ["Ana Sayfa", "#ana-sayfa"],
     ["Hizmetler", "#hizmetler"],
     ["Hakkımızda", "#hakkimizda"],
+    ["Salon", "#salon"],
     ["Uzman", "#uzman"],
     ["Galeri", "#galeri"],
     ["Ürünler", "#urunler"],
