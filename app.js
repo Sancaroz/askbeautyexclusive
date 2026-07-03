@@ -9,6 +9,7 @@ import { ProductPreview } from "./components/ProductPreview.js";
 import { Experience } from "./components/Experience.js";
 import { Testimonials } from "./components/Testimonials.js";
 import { AppointmentHelper, initAppointmentHelper } from "./components/AppointmentHelper.js";
+import { ServiceDetailModal, initServiceDetailModal } from "./components/ServiceDetailModal.js";
 import { CTA } from "./components/CTA.js";
 import { Footer } from "./components/Footer.js";
 
@@ -158,6 +159,7 @@ document.querySelector("#app").innerHTML = `
   </main>
   ${Footer()}
   ${FloatingActions()}
+  ${ServiceDetailModal()}
 `;
 
 const menuToggle = document.querySelector("[data-menu-toggle]");
@@ -176,3 +178,4 @@ document.querySelectorAll(".main-nav a").forEach(link => {
 });
 
 initAppointmentHelper();
+initServiceDetailModal();

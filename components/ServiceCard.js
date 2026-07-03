@@ -9,7 +9,7 @@ export function ServiceCard(service, categoryTitle) {
       <h3>${service.name}</h3>
       <p>${service.description}</p>
       <div class="service-actions">
-        <a class="text-link" href="#iletisim" aria-label="${service.name} detaylı bilgi">Detaylı Bilgi</a>
+        <button class="text-link" type="button" data-service-detail="${service.name}" aria-label="${service.name} detaylı bilgi">Detaylı Bilgi</button>
         <a class="mini-button" href="${whatsappMessage(message)}" target="_blank" rel="noreferrer" aria-label="${service.name} randevu al">Randevu Al</a>
       </div>
     </article>
