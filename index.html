@@ -20,6 +20,8 @@
     <meta name="twitter:image" content="https://askbeautyexclusive.com/assets/hero/ask-beauty-hero.jpg">
     <link rel="canonical" href="https://askbeautyexclusive.com/">
     <title>AŞK Beauty | Premium Güzellik Merkezi ve Randevu</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="preload" as="image" href="assets/hero/ask-beauty-hero.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,40 +30,108 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "BeautySalon",
-        "name": "AŞK Beauty",
-        "description": "Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamalarında premium güzellik merkezi.",
-        "url": "https://askbeautyexclusive.com/",
-        "telephone": "+90 553 641 21 71",
-        "sameAs": [
-          "https://www.instagram.com/make.upbysebnemkaymaz/",
-          "https://wa.me/905536412171"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Turgut Özal Bulvarı, Fatih Mahallesi, Palmiye Meydanı 37/D",
-          "addressLocality": "Büyükçekmece",
-          "addressRegion": "İstanbul",
-          "addressCountry": "TR"
-        },
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
+            "@type": "BeautySalon",
+            "@id": "https://askbeautyexclusive.com/#beautysalon",
+            "name": "AŞK Beauty",
+            "alternateName": "ASK Beauty",
+            "description": "Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamalarında premium güzellik merkezi.",
+            "url": "https://askbeautyexclusive.com/",
+            "image": "https://askbeautyexclusive.com/assets/exterior/storefront.jpeg",
+            "logo": "https://askbeautyexclusive.com/assets/favicon.svg",
+            "telephone": "+90 553 641 21 71",
+            "priceRange": "$$",
+            "areaServed": "Büyükçekmece, İstanbul",
+            "paymentAccepted": "Cash, Credit Card",
+            "currenciesAccepted": "TRY",
+            "sameAs": [
+              "https://www.instagram.com/make.upbysebnemkaymaz/",
+              "https://wa.me/905536412171"
             ],
-            "opens": "09:30",
-            "closes": "19:00"
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Turgut Özal Bulvarı, Fatih Mahallesi, Palmiye Meydanı 37/D",
+              "addressLocality": "Büyükçekmece",
+              "addressRegion": "İstanbul",
+              "postalCode": "34536",
+              "addressCountry": "TR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 41.017644,
+              "longitude": 28.599078
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:30",
+                "closes": "19:00"
+              }
+            ],
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul",
+            "makesOffer": {
+              "@type": "OfferCatalog",
+              "name": "AŞK Beauty Hizmetleri",
+              "itemListElement": [
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Kalıcı Makyaj",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PhiBrows Microblading (Kıl Tekniği)" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PhiContour Dudak Renklendirme" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PhiLiner Kalıcı Eyeliner" } }
+                  ]
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Kaş & Kirpik",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Altın Oran Kaş Tasarımı" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İpek Kirpik Uygulaması" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "My Lamination Kaş Laminasyonu" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "My Lamination Kirpik Laminasyonu" } }
+                  ]
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Cilt Bakımı",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Klasik Cilt Bakımı" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Profesyonel Cilt Bakım Protokolleri" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Casmara Cilt Bakımları" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kore Cam Cilt Uygulamaları" } }
+                  ]
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Tırnak",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Protez Tırnak" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jel Tırnak" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nail Art" } }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://askbeautyexclusive.com/#website",
+            "name": "AŞK Beauty",
+            "url": "https://askbeautyexclusive.com/",
+            "publisher": { "@id": "https://askbeautyexclusive.com/#beautysalon" },
+            "inLanguage": "tr-TR"
           }
-        ],
-        "priceRange": "$$",
-        "areaServed": "Büyükçekmece, İstanbul",
-        "hasMap": "https://www.google.com/maps/search/?api=1&query=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul"
+        ]
       }
     </script>
   </head>

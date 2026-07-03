@@ -1,0 +1,16 @@
+{
+  "name": "AŞK Beauty",
+  "short_name": "AŞK Beauty",
+  "description": "Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamaları için premium güzellik merkezi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffdfb",
+  "theme_color": "#f7efe8",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
