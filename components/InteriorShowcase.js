@@ -9,7 +9,15 @@ export function InteriorShowcase() {
     <section class="section interior-section" id="salon">
       <div class="interior-layout">
         <figure class="interior-hero">
-          <img src="${interiorSettings.heroImage}" alt="AŞK Beauty salon iç mekanı" loading="lazy">
+          <button
+            class="media-open"
+            type="button"
+            data-lightbox-image="${interiorSettings.heroImage}"
+            data-lightbox-title="AŞK Beauty salon iç mekanı"
+            aria-label="AŞK Beauty salon iç mekanı görselini büyüt"
+          >
+            <img src="${interiorSettings.heroImage}" alt="AŞK Beauty salon iç mekanı" loading="lazy">
+          </button>
         </figure>
 
         <div class="interior-content">
@@ -31,7 +39,15 @@ export function InteriorShowcase() {
       <div class="interior-gallery">
         ${interiorGallery.map(item => `
           <figure>
-            <img src="${item.image}" alt="${item.title}" loading="lazy">
+            <button
+              class="media-open"
+              type="button"
+              data-lightbox-image="${item.image}"
+              data-lightbox-title="${item.title}"
+              aria-label="${item.title} görselini büyüt"
+            >
+              <img src="${item.image}" alt="${item.title}" loading="lazy">
+            </button>
             <figcaption>${item.title}</figcaption>
           </figure>
         `).join("")}

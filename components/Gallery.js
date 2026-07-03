@@ -9,7 +9,15 @@ export function Gallery(items) {
       <div class="gallery-grid">
         ${items.map(item => `
           <figure class="gallery-item${item.fit === "contain" ? " is-contain" : ""}">
-            <img src="${item.image}" alt="${item.title}" loading="lazy">
+            <button
+              class="media-open"
+              type="button"
+              data-lightbox-image="${item.image}"
+              data-lightbox-title="${item.title}"
+              aria-label="${item.title} görselini büyüt"
+            >
+              <img src="${item.image}" alt="${item.title}" loading="lazy">
+            </button>
             <figcaption><strong>${item.label}</strong><span>${item.title}</span></figcaption>
           </figure>
         `).join("")}

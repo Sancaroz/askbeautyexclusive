@@ -12,6 +12,7 @@ import { Testimonials } from "./components/Testimonials.js";
 import { InstagramShowcase } from "./components/InstagramShowcase.js";
 import { AppointmentHelper, initAppointmentHelper } from "./components/AppointmentHelper.js";
 import { ServiceDetailModal, initServiceDetailModal } from "./components/ServiceDetailModal.js";
+import { ImageLightbox, initImageLightbox } from "./components/ImageLightbox.js";
 import { CTA } from "./components/CTA.js";
 import { Footer } from "./components/Footer.js";
 
@@ -164,6 +165,7 @@ document.querySelector("#app").innerHTML = `
   ${Footer()}
   ${FloatingActions()}
   ${ServiceDetailModal()}
+  ${ImageLightbox()}
 `;
 
 const menuToggle = document.querySelector("[data-menu-toggle]");
@@ -183,3 +185,4 @@ document.querySelectorAll(".main-nav a").forEach(link => {
 
 initAppointmentHelper();
 initServiceDetailModal();
+initImageLightbox();
