@@ -46,3 +46,16 @@ export const interiorGallery = [
     image: "assets/interior/salon-6.jpeg"
   }
 ];
+
+export const exteriorGallery = [
+  {
+    title: "AŞK Beauty dış cephe ve tabela",
+    text: "Palmiye Meydanı'nda kolay fark edilen mağaza girişi.",
+    image: "assets/exterior/storefront.jpeg"
+  },
+  {
+    title: "Giriş ve hizmet panosu",
+    text: "Randevuya gelirken kapı girişindeki siyah-gold tabela sizi karşılar.",
+    image: "assets/exterior/entrance-sign.jpeg"
+  }
+];

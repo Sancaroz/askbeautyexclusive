@@ -609,6 +609,70 @@ h1 {
   font-weight: 800;
 }
 
+.exterior-showcase {
+  display: grid;
+  gap: 24px;
+  margin-top: clamp(34px, 6vw, 72px);
+  padding-top: clamp(28px, 5vw, 52px);
+  border-top: 1px solid var(--line);
+}
+
+.exterior-showcase .section-heading {
+  margin-bottom: 0;
+}
+
+.exterior-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+  gap: 14px;
+}
+
+.exterior-gallery figure {
+  position: relative;
+  min-height: 440px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--cream-2);
+  box-shadow: var(--shadow);
+}
+
+.exterior-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.exterior-gallery figure:hover img {
+  transform: scale(1.04);
+}
+
+.exterior-gallery figcaption {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 8px;
+  color: #fffaf6;
+  background: rgba(46, 36, 48, 0.58);
+  backdrop-filter: blur(12px);
+}
+
+.exterior-gallery strong {
+  color: #f2d695;
+  font-size: 14px;
+}
+
+.exterior-gallery span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .expert-section {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.82fr);
@@ -1538,6 +1602,7 @@ h1 {
   .cta-section,
   .certificate-gallery,
   .interior-layout,
+  .exterior-gallery,
   .expert-section,
   .experience-layout,
   .appointment-helper,
@@ -1624,6 +1689,7 @@ h1 {
   .category-showcase,
   .service-grid,
   .interior-gallery,
+  .exterior-gallery,
   .instagram-grid,
   .testimonial-grid,
   .product-grid,
@@ -1667,5 +1733,9 @@ h1 {
 
   .journey-step {
     grid-template-columns: 1fr;
+  }
+
+  .exterior-gallery figure {
+    min-height: 340px;
   }
 }
