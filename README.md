@@ -19,3 +19,16 @@ http://localhost:5173/
 ```
 
 Yayına alma için GitHub Pages aktif edilmeli ve DNS kayıtları domain sağlayıcısında GitHub Pages'e yönlendirilmelidir.
+
+Instagram bio için önerilen hızlı bağlantı:
+
+```text
+https://askbeautyexclusive.com/links.html
+```
+
+Kısa bio metni önerisi:
+
+```text
+AŞK Beauty | Kalıcı makyaj, kaş & kirpik, cilt bakımı, tırnak
+Randevu ve konum için linke tıklayın.
+```
