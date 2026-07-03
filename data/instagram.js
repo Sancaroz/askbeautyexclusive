@@ -1,0 +1,32 @@
+import { business } from "./business.js";
+
+export const instagramSettings = {
+  enabled: true,
+  handle: business.instagramHandle,
+  profileUrl: business.instagramUrl,
+  title: "Instagram'dan seçmeler",
+  intro: "Güncel uygulama paylaşımları, salon duyuruları ve daha fazla sonuç görseli için Instagram hesabımızı takip edebilirsiniz."
+};
+
+export const instagramPosts = [
+  {
+    title: "Dudak renklendirme",
+    image: "assets/gallery/20.jpeg",
+    tag: "Kalıcı Makyaj"
+  },
+  {
+    title: "İpek kirpik etkisi",
+    image: "assets/gallery/14.jpeg",
+    tag: "Kaş & Kirpik"
+  },
+  {
+    title: "Kalıcı eyeliner",
+    image: "assets/gallery/16.jpeg",
+    tag: "Eyeliner"
+  },
+  {
+    title: "Nail art ilhamı",
+    image: "assets/gallery/13.jpeg",
+    tag: "Tırnak"
+  }
+];

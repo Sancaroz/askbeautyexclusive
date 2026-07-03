@@ -8,6 +8,7 @@ import { Gallery } from "./components/Gallery.js";
 import { ProductPreview } from "./components/ProductPreview.js";
 import { Experience } from "./components/Experience.js";
 import { Testimonials } from "./components/Testimonials.js";
+import { InstagramShowcase } from "./components/InstagramShowcase.js";
 import { AppointmentHelper, initAppointmentHelper } from "./components/AppointmentHelper.js";
 import { ServiceDetailModal, initServiceDetailModal } from "./components/ServiceDetailModal.js";
 import { CTA } from "./components/CTA.js";
@@ -152,6 +153,7 @@ document.querySelector("#app").innerHTML = `
     ${Experience()}
     ${renderCredentials()}
     ${Gallery(featuredGallery)}
+    ${InstagramShowcase()}
     ${Testimonials()}
     ${ProductPreview()}
     ${AppointmentHelper()}
