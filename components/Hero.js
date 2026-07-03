@@ -4,7 +4,7 @@ export function Hero() {
   return `
     <section class="hero" id="ana-sayfa">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/hero/ask-beauty-hero.jpg" alt="">
+        <img src="assets/hero/ask-beauty-hero.jpg" alt="" width="2868" height="1133" fetchpriority="high">
       </div>
       <div class="hero-content">
         <p class="eyebrow">Premium güzellik merkezi</p>
