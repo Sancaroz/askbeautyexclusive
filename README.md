@@ -4,6 +4,18 @@ Yerel site dosyası: `index.html`
 
 Domain hazırlığı: `askbeautyexclusive.com`
 
-Bu repo şimdilik yerelde görüntülenebilir. Domainin internette açılması için ayrıca hosting ve DNS kayıtlarının bağlanması gerekir.
+Bu repo GitHub Pages ve `askbeautyexclusive.com` domaini için hazırlanmıştır.
 
-Yerelde görmek için `index.html` dosyasını tarayıcıda açmak yeterlidir.
+Yerelde en sağlıklı kontrol:
+
+```bash
+python3 -m http.server 5173
+```
+
+Sonra tarayıcıda:
+
+```text
+http://localhost:5173/
+```
+
+Yayına alma için GitHub Pages aktif edilmeli ve DNS kayıtları domain sağlayıcısında GitHub Pages'e yönlendirilmelidir.
