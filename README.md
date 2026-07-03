@@ -32,3 +32,16 @@ Kısa bio metni önerisi:
 AŞK Beauty | Kalıcı makyaj, kaş & kirpik, cilt bakımı, tırnak
 Randevu ve konum için linke tıklayın.
 ```
+
+Instagram highlight önerisi:
+
+```text
+Randevu
+Hizmetler
+Galeri
+Konum
+Sertifikalar
+SSS
+```
+
+Instagram gönderi linkleri hazır olduğunda `data/instagram.js` içindeki `postUrl` alanları güncellenebilir.

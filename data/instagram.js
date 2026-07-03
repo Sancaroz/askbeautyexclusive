@@ -12,21 +12,25 @@ export const instagramPosts = [
   {
     title: "Dudak renklendirme",
     image: "assets/gallery/20.jpeg",
-    tag: "Kalıcı Makyaj"
+    tag: "Kalıcı Makyaj",
+    postUrl: ""
   },
   {
     title: "İpek kirpik etkisi",
     image: "assets/gallery/14.jpeg",
-    tag: "Kaş & Kirpik"
+    tag: "Kaş & Kirpik",
+    postUrl: ""
   },
   {
     title: "Kalıcı eyeliner",
     image: "assets/gallery/16.jpeg",
-    tag: "Eyeliner"
+    tag: "Eyeliner",
+    postUrl: ""
   },
   {
     title: "Nail art ilhamı",
     image: "assets/gallery/13.jpeg",
-    tag: "Tırnak"
+    tag: "Tırnak",
+    postUrl: ""
   }
 ];
