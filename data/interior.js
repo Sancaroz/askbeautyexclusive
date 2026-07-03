@@ -2,7 +2,7 @@ export const interiorSettings = {
   enabled: true,
   title: "Salonumuz",
   intro: "Randevulu, sakin ve hijyen odaklı çalışma alanımızda her uygulama kişiye özel planlanır.",
-  heroImage: "assets/interior/salon-1.jpeg"
+  heroImage: "assets/interior/salon-4.jpeg"
 };
 
 export const interiorHighlights = [
@@ -22,7 +22,27 @@ export const interiorHighlights = [
 
 export const interiorGallery = [
   {
-    title: "AŞK Beauty uygulama alanı",
+    title: "Sertifikalı uygulama alanı",
+    image: "assets/interior/salon-4.jpeg"
+  },
+  {
+    title: "Ferah salon atmosferi",
     image: "assets/interior/salon-1.jpeg"
+  },
+  {
+    title: "Kişiye özel bakım köşesi",
+    image: "assets/interior/salon-2.jpeg"
+  },
+  {
+    title: "Hijyenik çalışma düzeni",
+    image: "assets/interior/salon-3.jpeg"
+  },
+  {
+    title: "Profesyonel ürün seçkisi",
+    image: "assets/interior/salon-5.jpeg"
+  },
+  {
+    title: "Uzmanlık belgeleri",
+    image: "assets/interior/salon-6.jpeg"
   }
 ];
