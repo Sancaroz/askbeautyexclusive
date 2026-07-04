@@ -1,4 +1,6 @@
 export function Gallery(items) {
+  const imageAlt = item => item.alt || `${item.title} uygulama görseli - AŞK Beauty Büyükçekmece`;
+
   return `
     <section class="section gallery-section" id="galeri">
       <div class="section-heading">
@@ -16,7 +18,7 @@ export function Gallery(items) {
               data-lightbox-title="${item.title}"
               aria-label="${item.title} görselini büyüt"
             >
-              <img src="${item.image}" alt="${item.title}" loading="lazy">
+              <img src="${item.image}" alt="${imageAlt(item)}" loading="lazy">
             </button>
             <figcaption><strong>${item.label}</strong><span>${item.title}</span></figcaption>
           </figure>

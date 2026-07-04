@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://askbeautyexclusive.com/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/hero/ask-beauty-hero.jpg</image:loc>
+      <image:title>AŞK Beauty premium güzellik merkezi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/exterior/storefront.jpeg</image:loc>
+      <image:title>AŞK Beauty Büyükçekmece dış cephe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/about/ask-beauty-services-poster.jpeg</image:loc>
+      <image:title>AŞK Beauty Kalıcı Makyaj, Kaş, Kirpik, Cilt Bakımı ve Tırnak hizmetleri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/gallery/20.jpeg</image:loc>
+      <image:title>AŞK Beauty Dudak Renklendirme uygulaması</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/gallery/14.jpeg</image:loc>
+      <image:title>AŞK Beauty İpek Kirpik uygulaması</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/gallery/16.jpeg</image:loc>
+      <image:title>AŞK Beauty Kalıcı Eyeliner uygulaması</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/gallery/13.jpeg</image:loc>
+      <image:title>AŞK Beauty Jel Tırnak uygulaması</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://askbeautyexclusive.com/links.html</loc>

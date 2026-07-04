@@ -5,6 +5,8 @@ export function InstagramShowcase() {
     return "";
   }
 
+  const imageAlt = post => post.alt || `${post.title} ${post.tag} paylaşımı - AŞK Beauty Instagram`;
+
   return `
     <section class="section instagram-section" id="instagram">
       <div class="instagram-head">
@@ -21,7 +23,7 @@ export function InstagramShowcase() {
       <div class="instagram-grid">
         ${instagramPosts.map(post => `
           <a class="instagram-card" href="${post.postUrl || instagramSettings.profileUrl}" target="_blank" rel="noreferrer" aria-label="${post.title} Instagram'da gör">
-            <img src="${post.image}" alt="${post.title}" loading="lazy">
+            <img src="${post.image}" alt="${imageAlt(post)}" loading="lazy">
             <span>${post.tag}</span>
             <strong>${post.title}</strong>
           </a>

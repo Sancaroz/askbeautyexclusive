@@ -28,7 +28,7 @@ function renderServiceCategories() {
       <div class="category-showcase">
         ${serviceCategories.map(category => `
           <a class="category-tile" href="#${category.id}">
-            <img src="${category.image}" alt="${category.title}">
+            <img src="${category.image}" alt="AŞK Beauty ${category.title} hizmetleri">
             <span>${category.title}</span>
           </a>
         `).join("")}
