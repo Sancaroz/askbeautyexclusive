@@ -11,6 +11,8 @@
 https://askbeautyexclusive.com/sitemap.xml
 ```
 
+Not: Sitemap ana sayfayı, Instagram bağlantı sayfasını ve uygulama/salon/sertifika görsellerini içerir. Büyük görsel güncellemelerinden sonra Search Console'da sitemap yeniden gönderilebilir.
+
 5. Ana sayfa için URL denetimi yap:
 
 ```text
