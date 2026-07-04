@@ -23,7 +23,8 @@ function fallbackDetails(service) {
 
 function renderModalContent(service) {
   const details = service.details || fallbackDetails(service);
-  const message = `Merhaba AŞK Beauty, ${service.name} hakkında detaylı bilgi ve randevu almak istiyorum.`;
+  const facts = service.facts || ["Kişiye özel analiz", "Randevulu uygulama", "Bakım yönlendirmesi"];
+  const message = `Merhaba AŞK Beauty, ${service.name} hakkında bilgi alıp randevu oluşturmak istiyorum. Uygun saatlerinizi paylaşır mısınız?`;
 
   return `
     <p class="eyebrow">${service.category}</p>
@@ -32,9 +33,7 @@ function renderModalContent(service) {
       ${details.map(item => `<p>${item}</p>`).join("")}
     </div>
     <div class="service-detail-meta">
-      <span>Kişiye özel analiz</span>
-      <span>Randevulu uygulama</span>
-      <span>Bakım yönlendirmesi</span>
+      ${facts.map(item => `<span>${item}</span>`).join("")}
     </div>
     <div class="service-detail-actions">
       <a class="button button-primary" href="${whatsappMessage(message)}" target="_blank" rel="noreferrer">WhatsApp ile Sor</a>

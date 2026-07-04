@@ -18,7 +18,7 @@ function serviceOptions() {
 }
 
 function messageFor(serviceName, slot) {
-  return `Merhaba AŞK Beauty, ${serviceName} için ${slot.toLowerCase()} saatlerinde randevu almak istiyorum.`;
+  return `Merhaba AŞK Beauty, ${serviceName} için ${slot.toLowerCase()} saatlerinde randevu almak istiyorum. Uygun günlerinizi paylaşır mısınız?`;
 }
 
 export function AppointmentHelper() {

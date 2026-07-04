@@ -1,7 +1,7 @@
 import { whatsappMessage } from "../data/business.js";
 
 export function ServiceCard(service, categoryTitle) {
-  const message = `Merhaba AŞK Beauty, ${service.name} için randevu almak istiyorum.`;
+  const message = `Merhaba AŞK Beauty, ${service.name} için randevu almak istiyorum. Uygun gün ve saatlerinizi paylaşır mısınız?`;
 
   return `
     <article class="service-card">
