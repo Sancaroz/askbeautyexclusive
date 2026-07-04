@@ -775,6 +775,59 @@ h1 {
   gap: 16px;
 }
 
+.local-seo-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1fr);
+  gap: clamp(22px, 4vw, 46px);
+  align-items: start;
+  padding-top: clamp(28px, 5vw, 54px);
+  border-top: 1px solid var(--line);
+}
+
+.local-seo-copy {
+  display: grid;
+  gap: 14px;
+}
+
+.local-seo-copy h2 {
+  color: var(--ink);
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 0.98;
+}
+
+.local-seo-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.local-seo-topics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.local-seo-topics article {
+  display: grid;
+  gap: 8px;
+  min-height: 178px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 251, 0.78);
+}
+
+.local-seo-topics h3 {
+  color: var(--plum);
+  font-size: 18px;
+}
+
+.local-seo-topics p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .journey-panel,
 .faq-panel {
   display: grid;
@@ -1572,6 +1625,7 @@ h1 {
   .cta-section,
   .certificate-gallery,
   .interior-layout,
+  .local-seo-section,
   .exterior-gallery,
   .expert-section,
   .experience-layout,
@@ -1659,6 +1713,7 @@ h1 {
   .category-showcase,
   .service-grid,
   .interior-gallery,
+  .local-seo-topics,
   .exterior-gallery,
   .instagram-grid,
   .testimonial-grid,

@@ -10,6 +10,7 @@ import { Experience } from "./components/Experience.js";
 import { InteriorShowcase } from "./components/InteriorShowcase.js";
 import { Testimonials } from "./components/Testimonials.js";
 import { InstagramShowcase } from "./components/InstagramShowcase.js";
+import { LocalSeo } from "./components/LocalSeo.js";
 import { AppointmentHelper, initAppointmentHelper } from "./components/AppointmentHelper.js";
 import { ServiceDetailModal, initServiceDetailModal } from "./components/ServiceDetailModal.js";
 import { ImageLightbox, initImageLightbox } from "./components/ImageLightbox.js";
@@ -154,6 +155,7 @@ document.querySelector("#app").innerHTML = `
     ${InteriorShowcase()}
     ${ExpertProfile()}
     ${Experience()}
+    ${LocalSeo()}
     ${renderCredentials()}
     ${Gallery(featuredGallery)}
     ${InstagramShowcase()}
