@@ -55,9 +55,9 @@ export function InteriorShowcase() {
 
       <div class="exterior-showcase">
         <div class="section-heading">
-          <p class="eyebrow">Konum</p>
-          <h2>Dış cephe ve giriş fotoğraflarıyla salonu daha kolay tanıyın.</h2>
-          <span>Randevuya gelirken AŞK Beauty tabelasını ve giriş panosunu bu görsellerden kontrol edebilirsiniz.</span>
+          <p class="eyebrow">Salon Girişi</p>
+          <h2>İlk andan itibaren sade, şık ve güven veren bir karşılama.</h2>
+          <span>AŞK Beauty dış cephe ve giriş alanı, salonun premium çizgisini daha kapıdan hissettirir.</span>
         </div>
 
         <div class="exterior-gallery">
