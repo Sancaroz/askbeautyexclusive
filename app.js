@@ -64,7 +64,7 @@ function renderWhy() {
   return `
     <section class="section why-section" id="hakkimizda">
       <div class="why-image">
-        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=85" alt="Premium güzellik salonu atmosferi">
+        <img src="assets/about/ask-beauty-services-poster.jpeg" alt="AŞK Beauty hizmetleri ve uygulama görselleri">
       </div>
       <div class="why-content">
         <p class="eyebrow">Neden AŞK Beauty?</p>
