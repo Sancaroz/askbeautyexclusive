@@ -23,7 +23,7 @@ function renderServiceCategories() {
       <div class="section-heading">
         <p class="eyebrow">Hizmetler</p>
         <h2>Güzellik ritüelinizi zarif bir deneyime dönüştüren uygulamalar.</h2>
-        <span>Yeni hizmet eklemek için yalnızca <code>data/services.js</code> dosyasını güncellemeniz yeterli.</span>
+        <span>Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamaları randevu öncesi ihtiyacınıza göre planlanır.</span>
       </div>
       <div class="category-showcase">
         ${serviceCategories.map(category => `
