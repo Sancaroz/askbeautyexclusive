@@ -965,6 +965,39 @@ h1 {
   gap: 12px;
 }
 
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -12px 0 22px;
+}
+
+.gallery-filters button {
+  min-height: 42px;
+  padding: 10px 16px;
+  border: 1px solid rgba(200, 164, 93, 0.28);
+  border-radius: 999px;
+  color: var(--plum);
+  background: rgba(255, 253, 251, 0.82);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 850;
+  cursor: pointer;
+  transition:
+    background 220ms ease,
+    border-color 220ms ease,
+    color 220ms ease,
+    transform 220ms ease;
+}
+
+.gallery-filters button:hover,
+.gallery-filters button.is-active {
+  border-color: rgba(122, 72, 128, 0.34);
+  color: var(--white);
+  background: linear-gradient(135deg, var(--plum), var(--mauve));
+  transform: translateY(-1px);
+}
+
 .gallery-item {
   position: relative;
   min-height: 270px;
@@ -1007,6 +1040,10 @@ h1 {
 
 .gallery-item:hover img {
   transform: scale(1.06);
+}
+
+.gallery-item[hidden] {
+  display: none;
 }
 
 .gallery-item figcaption {
@@ -1635,6 +1672,22 @@ h1 {
 
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-filters {
+    flex-wrap: nowrap;
+    margin-right: calc(var(--side-pad) * -1);
+    padding-right: var(--side-pad);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .gallery-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-filters button {
+    flex: 0 0 auto;
   }
 
   .instagram-head {

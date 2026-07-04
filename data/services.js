@@ -195,106 +195,127 @@ export const featuredGallery = [
   {
     title: "Dudak Renklendirme",
     label: "Lips",
+    category: "dudak",
     image: "assets/gallery/1.jpeg"
   },
   {
     title: "Dudak Renklendirme",
     label: "Lips",
+    category: "dudak",
     image: "assets/gallery/2.jpeg"
   },
   {
     title: "Dudak Renklendirme",
     label: "Lips",
+    category: "dudak",
     image: "assets/gallery/19.jpeg"
   },
   {
     title: "Dudak Renklendirme",
     label: "Lips",
+    category: "dudak",
     image: "assets/gallery/20.jpeg"
   },
   {
     title: "Dudak Renklendirme",
     label: "Lips",
+    category: "dudak",
     image: "assets/gallery/21.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",
     label: "Eyeliner",
+    category: "eyeliner",
     image: "assets/gallery/6.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",
     label: "Eyeliner",
+    category: "eyeliner",
     image: "assets/gallery/16.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",
     label: "Eyeliner",
+    category: "eyeliner",
     image: "assets/gallery/17.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",
     label: "Eyeliner",
+    category: "eyeliner",
     image: "assets/gallery/18.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",
     label: "Eyeliner",
+    category: "eyeliner",
     image: "assets/gallery/3.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",
     label: "Eyeliner",
+    category: "eyeliner",
     image: "assets/gallery/7.jpeg"
   },
   {
     title: "İpek Kirpik",
     label: "Lash",
+    category: "kas-kirpik",
     image: "assets/gallery/4.jpeg"
   },
   {
     title: "İpek Kirpik",
     label: "Lash",
+    category: "kas-kirpik",
     image: "assets/gallery/14.jpeg"
   },
   {
     title: "İpek Kirpik",
     label: "Lash",
+    category: "kas-kirpik",
     image: "assets/gallery/15.jpeg"
   },
   {
     title: "Protez Tırnak",
     label: "Nail",
+    category: "tirnak",
     image: "assets/gallery/8.jpeg"
   },
   {
     title: "Jel Tırnak",
     label: "Nail",
+    category: "tirnak",
     image: "assets/gallery/5.jpeg"
   },
   {
     title: "Nail Art",
     label: "Nail Art",
+    category: "tirnak",
     image: "assets/gallery/9.jpeg"
   },
   {
     title: "Nail Art",
     label: "Nail Art",
+    category: "tirnak",
     image: "assets/gallery/11.jpeg"
   },
   {
     title: "Nail Art",
     label: "Nail Art",
+    category: "tirnak",
     image: "assets/gallery/12.jpeg"
   },
   {
     title: "Jel Tırnak",
     label: "Nail",
+    category: "tirnak",
     image: "assets/gallery/13.jpeg"
   },
   {
     title: "PhiBrows Artist Sertifikası",
     label: "Certificate",
+    category: "sertifika",
     image: "assets/certificates/phibrows-artist-asiye-sebnem-kaymaz.jpeg",
     fit: "contain"
   }

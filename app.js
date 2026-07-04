@@ -4,7 +4,7 @@ import { Header } from "./components/Header.js";
 import { Hero } from "./components/Hero.js";
 import { ServiceCard } from "./components/ServiceCard.js";
 import { ExpertProfile } from "./components/ExpertProfile.js";
-import { Gallery } from "./components/Gallery.js";
+import { Gallery, initGalleryFilters } from "./components/Gallery.js";
 import { ProductPreview } from "./components/ProductPreview.js";
 import { Experience } from "./components/Experience.js";
 import { InteriorShowcase } from "./components/InteriorShowcase.js";
@@ -188,3 +188,4 @@ document.querySelectorAll(".main-nav a").forEach(link => {
 initAppointmentHelper();
 initServiceDetailModal();
 initImageLightbox();
+initGalleryFilters();
