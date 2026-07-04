@@ -47,7 +47,7 @@ export const faqs = [
     answer: "Evet. Altın oran, yüz hattı ve kişinin beklentisi dikkate alınarak abartısız, dengeli ve doğal sonuç hedeflenir."
   },
   {
-    question: "Cilt bakımında hangi protokol seçiliyor?",
+    question: "Cilt Bakımında hangi protokol seçiliyor?",
     answer: "Klasik bakım, profesyonel protokoller, Casmara veya Kore cam cilt gibi seçenekler cilt ihtiyacına göre değerlendirilir."
   },
   {

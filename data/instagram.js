@@ -16,7 +16,7 @@ export const instagramPosts = [
     postUrl: ""
   },
   {
-    title: "İpek kirpik etkisi",
+    title: "İpek Kirpik Etkisi",
     image: "assets/gallery/14.jpeg",
     tag: "Kaş & Kirpik",
     postUrl: ""

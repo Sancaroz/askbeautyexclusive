@@ -13,13 +13,13 @@ export const testimonials = [
   },
   {
     name: "AŞK Beauty danışanı",
-    service: "Kaş & kirpik",
+    service: "Kaş & Kirpik",
     text: "Onaylı yorumlar eklendiğinde bu bölüm otomatik olarak dolacak.",
     status: "Yakında"
   },
   {
     name: "AŞK Beauty danışanı",
-    service: "Cilt bakımı ve tırnak",
+    service: "Cilt Bakımı ve Tırnak",
     text: "Google, Instagram veya WhatsApp üzerinden gelen gerçek yorumlar burada sergilenebilir.",
     status: "Yakında"
   }

@@ -94,7 +94,7 @@ export const serviceCategories = [
     image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85",
     services: [
       {
-        name: "Meridyen Terapisi (Çok Yakında)",
+        name: "Meridyen Terapi (Çok Yakında)",
         description: "Enerji dengesi ve rahatlama odağıyla yakında randevu sistemine eklenecek."
       }
     ]

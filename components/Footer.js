@@ -5,7 +5,7 @@ export function Footer() {
     <footer class="site-footer" id="iletisim">
       <div class="footer-brand">
         <a class="brand" href="#ana-sayfa"><span class="brand-mark">AŞK</span><span>Beauty</span></a>
-        <p>Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamalarında premium hizmet deneyimi.</p>
+        <p>Kalıcı Makyaj, Kaş, Kirpik, Cilt Bakımı ve Tırnak uygulamalarında premium hizmet deneyimi.</p>
       </div>
       <div class="contact-grid">
         <a href="${business.whatsappUrl}" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>${business.phoneDisplay}</strong></a>

@@ -197,7 +197,6 @@ main {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0;
-  text-transform: uppercase;
 }
 
 h1,
@@ -673,7 +672,6 @@ h1 {
   color: var(--gold-dark);
   font-size: 14px;
   letter-spacing: 0;
-  text-transform: uppercase;
 }
 
 .expert-content p {
@@ -1027,7 +1025,6 @@ h1 {
 .gallery-item strong {
   color: #f2d695;
   font-size: 12px;
-  text-transform: uppercase;
 }
 
 .gallery-item span {
@@ -1167,7 +1164,6 @@ h1 {
   color: #f2d695;
   font-size: 12px;
   font-weight: 850;
-  text-transform: uppercase;
 }
 
 .instagram-card strong {
@@ -1542,7 +1538,6 @@ h1 {
   color: var(--gold-dark);
   font-size: 12px;
   font-weight: 800;
-  text-transform: uppercase;
 }
 
 .contact-grid strong,

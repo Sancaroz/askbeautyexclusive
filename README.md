@@ -29,7 +29,7 @@ https://askbeautyexclusive.com/links.html
 Kısa bio metni önerisi:
 
 ```text
-AŞK Beauty | Kalıcı makyaj, kaş & kirpik, cilt bakımı, tırnak
+AŞK Beauty | Kalıcı Makyaj, Kaş & Kirpik, Cilt Bakımı, Tırnak
 Randevu ve konum için linke tıklayın.
 ```
 

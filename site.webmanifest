@@ -1,7 +1,7 @@
 {
   "name": "AŞK Beauty",
   "short_name": "AŞK Beauty",
-  "description": "Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamaları için premium güzellik merkezi.",
+  "description": "Kalıcı Makyaj, Kaş, Kirpik, Cilt Bakımı ve Tırnak uygulamaları için premium güzellik merkezi.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fffdfb",

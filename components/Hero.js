@@ -7,10 +7,10 @@ export function Hero() {
         <img src="assets/hero/ask-beauty-hero.jpg" alt="" width="2868" height="1133" fetchpriority="high">
       </div>
       <div class="hero-content">
-        <p class="eyebrow">Premium güzellik merkezi</p>
+        <p class="eyebrow">Premium Güzellik Merkezi</p>
         <h1>AŞK Beauty</h1>
         <span class="script-accent hero-signature">by Asiye Şebnem Kaymaz</span>
-        <p class="hero-text">Kalıcı makyaj, kaş, kirpik, cilt bakımı ve tırnak uygulamalarında profesyonel deneyim.</p>
+        <p class="hero-text">Kalıcı Makyaj, Kaş, Kirpik, Cilt Bakımı ve Tırnak uygulamalarında profesyonel deneyim.</p>
         <div class="hero-proof">
           <span>PhiBrows Artist</span>
           <span>Uzman estetisyen</span>
