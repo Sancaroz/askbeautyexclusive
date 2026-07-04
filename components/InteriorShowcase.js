@@ -54,12 +54,6 @@ export function InteriorShowcase() {
       </div>
 
       <div class="exterior-showcase">
-        <div class="section-heading">
-          <p class="eyebrow">Salon Girişi</p>
-          <h2>İlk andan itibaren sade, şık ve güven veren bir karşılama.</h2>
-          <span>AŞK Beauty dış cephe ve giriş alanı, salonun premium çizgisini daha kapıdan hissettirir.</span>
-        </div>
-
         <div class="exterior-gallery">
           ${exteriorGallery.map(item => `
             <figure>
@@ -72,10 +66,6 @@ export function InteriorShowcase() {
               >
                 <img src="${item.image}" alt="${item.title}" loading="lazy">
               </button>
-              <figcaption>
-                <strong>${item.title}</strong>
-                <span>${item.text}</span>
-              </figcaption>
             </figure>
           `).join("")}
         </div>

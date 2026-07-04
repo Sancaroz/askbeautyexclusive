@@ -50,12 +50,10 @@ export const interiorGallery = [
 export const exteriorGallery = [
   {
     title: "AŞK Beauty dış cephe ve tabela",
-    text: "Siyah ve gold detaylarla markanın zarif çizgisini yansıtan dış cephe.",
     image: "assets/exterior/storefront.jpeg"
   },
   {
     title: "Giriş ve hizmet panosu",
-    text: "Uygulama alanına geçmeden önce hizmetleri net ve estetik biçimde sunan giriş.",
     image: "assets/exterior/entrance-sign.jpeg"
   }
 ];
