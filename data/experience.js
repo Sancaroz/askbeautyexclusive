@@ -48,7 +48,7 @@ export const faqs = [
   },
   {
     question: "Cilt Bakımında hangi protokol seçiliyor?",
-    answer: "Klasik bakım, profesyonel protokoller, Casmara veya Kore cam cilt gibi seçenekler cilt ihtiyacına göre değerlendirilir."
+    answer: "Her cilt özeldir. Profesyonel cilt analizi sonrası PLAYSKIN Klasik Cilt Bakımı, CASMARA Kore Cam Cilt Bakımı veya REVCELL Özel Gün Bakımı arasından cildin ihtiyacına en uygun protokol belirlenir."
   },
   {
     question: "Tırnak işlemlerinde tasarım seçebiliyor muyum?",

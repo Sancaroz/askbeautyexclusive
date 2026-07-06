@@ -4,7 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://askbeautyexclusive.com/</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -54,6 +54,10 @@
     <image:image>
       <image:loc>https://askbeautyexclusive.com/assets/certificates/phibrows-artist-asiye-sebnem-kaymaz.jpeg</image:loc>
       <image:title>PhiBrows Artist Asiye Şebnem Kaymaz sertifikası</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/certificates/phicontour-artist-asiye-sebnem-kaymaz.png</image:loc>
+      <image:title>PhiContour Artist Asiye Şebnem Kaymaz sertifikası</image:title>
     </image:image>
     <image:image>
       <image:loc>https://askbeautyexclusive.com/assets/gallery/1.jpeg</image:loc>

@@ -18,7 +18,7 @@ export const localSeoTopics = [
   },
   {
     title: "Cilt Bakımı Protokolleri",
-    text: "Klasik cilt bakımı, Casmara bakımları, profesyonel protokoller ve Kore cam cilt uygulamaları cildin ihtiyacına göre seçilir."
+    text: "PLAYSKIN Klasik Cilt Bakımı, CASMARA Kore Cam Cilt Bakımı ve REVCELL Özel Gün Bakımı profesyonel cilt analizi sonrası ihtiyaca göre seçilir."
   },
   {
     title: "Tırnak ve Nail Art",

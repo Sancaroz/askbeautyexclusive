@@ -86,8 +86,8 @@ function renderWhy() {
 function renderCredentials() {
   const credentials = [
     "PhiBrows Artist",
-    "Philips Artist",
-    "Philiner Artist",
+    "PhiContour Artist",
+    "PhiLiner Artist",
     "MY Lamination",
     "Nail Art",
     "Altın Oran Kaş Tasarımı",
@@ -126,6 +126,19 @@ function renderCredentials() {
           >
           <figcaption>
             <strong>PhiBrows Artist</strong>
+            <span>Asiye Şebnem Kaymaz</span>
+          </figcaption>
+        </figure>
+        <figure class="certificate-wall">
+          <img
+            src="assets/certificates/phicontour-artist-asiye-sebnem-kaymaz.png"
+            alt="PhiContour Artist Asiye Şebnem Kaymaz sertifikası"
+            width="1260"
+            height="916"
+            loading="lazy"
+          >
+          <figcaption>
+            <strong>PhiContour Artist</strong>
             <span>Asiye Şebnem Kaymaz</span>
           </figcaption>
         </figure>

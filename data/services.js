@@ -88,47 +88,40 @@ export const serviceCategories = [
   {
     id: "cilt-bakimi",
     title: "Cilt Bakımı",
-    summary: "Cilt ihtiyacına göre analiz edilen, nem, ışıltı ve yenilenme odaklı bakım protokolleri.",
+    summary: "Her cilt özeldir. Profesyonel cilt analizi sonrası ihtiyacınıza en uygun bakım protokolü belirlenir ve tamamen size özel bir uygulama planlanır.",
     image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85",
     services: [
       {
-        name: "Klasik Cilt Bakımı",
-        description: "Temizleme, nemlendirme ve rahatlatma adımlarıyla düzenli bakım rutini.",
-        facts: ["Cilt temizliği", "Nem desteği", "Düzenli bakım"],
+        name: "Klasik Cilt Bakımı (PLAYSKIN)",
+        description: "Cildin ihtiyacı olan temel temizleme, arındırma ve nem desteğini sunan profesyonel bakım protokolü.",
+        facts: ["Derin temizlik", "Nem desteği", "Tüm cilt tipleri"],
         details: [
-          "Cildin günlük birikimlerden arındırılması, nemlendirilmesi ve rahatlatılması hedeflenir.",
-          "Düzenli bakım rutini isteyen ve cildini canlı tutmak isteyen kişiler için uygundur.",
-          "Cilt tipine göre ev bakım önerileri ve takip sıklığı randevuda paylaşılır."
+          "Sağlıklı ve ışıldayan bir cildin ilk adımı doğru temizleme ve düzenli bakımdır.",
+          "PLAYSKIN profesyonel cilt bakım protokolü ile cilt nazikçe arındırılır, ölü derilerden temizlenir ve ihtiyacı olan nem desteği sağlanır.",
+          "Cildi derinlemesine temizlemeye, gözenek görünümünü azaltmaya, siyah nokta ve yağ dengesini desteklemeye yardımcı olur.",
+          "Tüm cilt tipleri için günlük bakım rutini oluşturmak isteyen herkes için uygundur."
         ]
       },
       {
-        name: "Profesyonel Cilt Bakım Protokolleri",
-        description: "Cilt tipine ve ihtiyacına göre planlanan ileri seviye bakım uygulamaları.",
-        facts: ["Cilt analizi", "Kişiye özel protokol", "Yoğun bakım"],
+        name: "CASMARA Kore Cam Cilt Bakımı",
+        description: "Yoğun nem, vitamin ve antioksidan desteğiyle cam gibi parlak ve aydınlık cilt görünümünü hedefleyen bakım.",
+        facts: ["Cam cilt etkisi", "Yoğun nem", "Aydınlık görünüm"],
         details: [
-          "Nem, leke görünümü, matlık, hassasiyet veya gözenek ihtiyacına göre protokol seçilir.",
-          "Uygulama adımları cilt analizine göre kişiye özel planlanır.",
-          "Daha etkili sonuç için seans aralığı ve ev bakım rutini birlikte belirlenir."
+          "Profesyonel CASMARA protokolleri ile cilt yoğun nem, vitamin ve antioksidan desteği alırken doğal ışıltısına kavuşur.",
+          "Kore cilt bakımından ilham alan bu özel uygulama cildin daha aydınlık, dolgun ve sağlıklı görünmesini hedefler.",
+          "Cilt tonunu eşitlemeye, mat ve yorgun görünümü azaltmaya, elastikiyeti desteklemeye ve ince çizgi görünümünü azaltmaya yardımcı olur.",
+          "Nemsiz, mat, yorgun ve ışıltısını kaybetmiş ciltler için uygundur."
         ]
       },
       {
-        name: "Casmara Cilt Bakımları",
-        description: "Cilt ihtiyacına göre seçilen profesyonel Casmara protokolleriyle yoğun bakım deneyimi.",
-        facts: ["Casmara protokol", "Yoğun nem", "Işıltılı görünüm"],
+        name: "REVCELL Özel Gün Bakımı",
+        description: "Düğün, nişan, davet ve özel organizasyonlar öncesi cildi canlı, dolgun ve makyaja hazır gösteren flash bakım.",
+        facts: ["Flash bakım", "Makyaj öncesi hazırlık", "1-3 gün önce"],
         details: [
-          "Cildin nem, canlılık ve konfor ihtiyacına göre Casmara bakım protokolü seçilir.",
-          "Yoğun bakım hissi, rahatlatıcı uygulama akışı ve daha aydınlık görünüm hedeflenir.",
-          "Bakım sonrası cilt tipine uygun devam ürünleri ve rutin önerileri paylaşılır."
-        ]
-      },
-      {
-        name: "Kore Cam Cilt Uygulamaları",
-        description: "Pürüzsüz, nemli ve aydınlık görünüm hedefleyen çok adımlı bakım.",
-        facts: ["Aydınlık görünüm", "Çok adımlı bakım", "Nem dengesi"],
-        details: [
-          "Cam cilt etkisi için nem dengesi, parlaklık ve pürüzsüz görünüm odağa alınır.",
-          "Cilt bariyerini destekleyen çok adımlı bakım yaklaşımıyla planlanır.",
-          "Uygulama sonrası ışıltıyı korumak için günlük bakım önerileri verilir."
+          "Düğün, nişan, mezuniyet, davet, doğum günü veya önemli bir organizasyon öncesinde cildi kusursuz görünüme hazırlayan profesyonel bakım protokolüdür.",
+          "Cildin daha aydınlık, dolgun ve canlı görünmesine destek olur; makyajın cilt üzerinde daha pürüzsüz durmasına yardımcı olur.",
+          "Anında canlı ve parlak görünüm, yoğun nem desteği, dolgunluk etkisi ve dinlenmiş cilt görünümü hedeflenir.",
+          "Özel gününüzden 1-3 gün önce uygulanması tavsiye edilir."
         ]
       }
     ]
@@ -317,6 +310,13 @@ export const featuredGallery = [
     label: "Certificate",
     category: "sertifika",
     image: "assets/certificates/phibrows-artist-asiye-sebnem-kaymaz.jpeg",
+    fit: "contain"
+  },
+  {
+    title: "PhiContour Artist Sertifikası",
+    label: "Certificate",
+    category: "sertifika",
+    image: "assets/certificates/phicontour-artist-asiye-sebnem-kaymaz.png",
     fit: "contain"
   }
 ];
