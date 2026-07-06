@@ -1,4 +1,4 @@
-import { localSeo, localSeoTopics } from "../data/localSeo.js";
+import { localSeo, localSeoTopics, serviceSeoBlocks } from "../data/localSeo.js";
 
 export function LocalSeo() {
   return `
@@ -15,6 +15,17 @@ export function LocalSeo() {
           <article>
             <h3>${item.title}</h3>
             <p>${item.text}</p>
+          </article>
+        `).join("")}
+      </div>
+
+      <div class="service-seo-blocks" aria-label="Büyükçekmece hizmet aramaları">
+        ${serviceSeoBlocks.map(item => `
+          <article>
+            <span>${item.keyword}</span>
+            <h3>${item.title}</h3>
+            <p>${item.text}</p>
+            <a class="text-link" href="${item.href}">Hizmeti İncele</a>
           </article>
         `).join("")}
       </div>

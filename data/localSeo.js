@@ -25,3 +25,48 @@ export const localSeoTopics = [
     text: "Protez tırnak, jel tırnak ve nail art uygulamalarında form, renk ve tasarım randevu sırasında birlikte netleştirilir."
   }
 ];
+
+export const serviceSeoBlocks = [
+  {
+    keyword: "Büyükçekmece PhiBrows Microblading",
+    title: "PhiBrows Microblading ile doğal kaş görünümü",
+    text:
+      "Büyükçekmece'de PhiBrows Microblading arayan danışanlar için kaş formu; yüz oranı, mevcut kaş yapısı ve doğal ifade dikkate alınarak planlanır.",
+    href: "#kalici-makyaj"
+  },
+  {
+    keyword: "Büyükçekmece Dudak Renklendirme",
+    title: "PhiContour Dudak Renklendirme",
+    text:
+      "Dudak tonunu daha canlı, dengeli ve bakımlı göstermek isteyenler için renk seçimi dudak alt tonu ve günlük kullanım beklentisine göre yapılır.",
+    href: "#kalici-makyaj"
+  },
+  {
+    keyword: "Büyükçekmece Kalıcı Eyeliner",
+    title: "PhiLiner Kalıcı Eyeliner",
+    text:
+      "Kalıcı eyeliner uygulaması, bakışlara netlik kazandırmak isteyen kişiler için göz formu ve doğal görünüm beklentisi değerlendirilerek planlanır.",
+    href: "#kalici-makyaj"
+  },
+  {
+    keyword: "Büyükçekmece Kaş ve Kirpik",
+    title: "Kaş Tasarımı, İpek Kirpik ve Laminasyon",
+    text:
+      "Altın Oran Kaş Tasarımı, İpek Kirpik, Kaş Laminasyonu ve Kirpik Laminasyonu uygulamaları bakışları daha dengeli ve bakımlı göstermeyi hedefler.",
+    href: "#kas-kirpik"
+  },
+  {
+    keyword: "Büyükçekmece Cilt Bakımı",
+    title: "PLAYSKIN, CASMARA ve REVCELL protokolleri",
+    text:
+      "Cilt Bakımı protokolleri, profesyonel cilt analizi sonrası temel bakım, Kore Cam Cilt etkisi veya özel gün hazırlığı ihtiyacına göre seçilir.",
+    href: "#cilt-bakimi-rehberi"
+  },
+  {
+    keyword: "Büyükçekmece Protez Tırnak ve Nail Art",
+    title: "Tırnak ve Nail Art uygulamaları",
+    text:
+      "Protez Tırnak, Jel Tırnak ve Nail Art işlemlerinde form, renk ve tasarım; günlük kullanım alışkanlığı ve kişisel stile göre netleştirilir.",
+    href: "#tirnak"
+  }
+];
