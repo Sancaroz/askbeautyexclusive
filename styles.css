@@ -1667,6 +1667,101 @@ h1 {
   font-weight: 800;
 }
 
+.testimonial-empty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: clamp(22px, 4vw, 32px);
+  border: 1px solid rgba(200, 164, 93, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 253, 251, 0.92), rgba(216, 194, 229, 0.2)),
+    var(--white);
+  box-shadow: 0 18px 54px rgba(80, 52, 82, 0.08);
+}
+
+.testimonial-empty div {
+  display: grid;
+  gap: 8px;
+}
+
+.testimonial-empty strong {
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1;
+}
+
+.testimonial-empty p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.review-source-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.review-source-grid article {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 251, 0.72);
+}
+
+.review-source-grid span {
+  color: var(--gold-dark);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.review-source-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.review-workflow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+  padding: 16px 18px;
+  border: 1px solid rgba(143, 111, 160, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 253, 251, 0.68);
+}
+
+.review-workflow strong {
+  color: var(--plum);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.review-workflow ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review-workflow li {
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(216, 194, 229, 0.18);
+  font-size: 12px;
+  font-weight: 750;
+}
+
 .product-preview {
   padding-top: 42px;
 }
@@ -2043,6 +2138,7 @@ h1 {
   .service-grid,
   .instagram-grid,
   .testimonial-grid,
+  .review-source-grid,
   .product-grid,
   .skin-protocol-grid,
   .service-match-grid,
@@ -2106,6 +2202,12 @@ h1 {
   }
 
   .service-match-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .testimonial-empty,
+  .review-workflow {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -2187,6 +2289,7 @@ h1 {
   .exterior-gallery,
   .instagram-grid,
   .testimonial-grid,
+  .review-source-grid,
   .product-grid,
   .credential-tags,
   .expert-tags,

@@ -1,26 +1,42 @@
 export const testimonialSettings = {
   enabled: true,
-  title: "Danışan deneyimleri",
-  intro: "Gerçek müşteri yorumları onay sonrası burada paylaşılacak."
+  title: "Onaylı danışan yorumları",
+  intro: "AŞK Beauty'de yalnızca izin alınmış, gerçek danışan geri bildirimleri paylaşılır. İlk yorumlar geldikçe bu alan Google, Instagram veya WhatsApp kaynaklı içeriklerle güncellenecek.",
+  emptyTitle: "Yorum altyapısı hazır",
+  emptyText:
+    "Gerçek müşteri yorumları onay sonrası burada yayınlanacak. Bu bölüm sahte yorum kullanmaz; her yorum kaynak, hizmet ve izin bilgisiyle eklenir."
 };
 
 export const testimonials = [
+  // Gerçek yorum ekleneceği zaman bu örneği kopyalayın:
+  // {
+  //   name: "Ad Soyad veya baş harf",
+  //   service: "PhiBrows Microblading",
+  //   text: "Danışanın izin verdiği kısa yorum metni.",
+  //   source: "Google",
+  //   date: "2026-07-06",
+  //   rating: 5,
+  //   approved: true
+  // }
+];
+
+export const reviewSources = [
   {
-    name: "AŞK Beauty danışanı",
-    service: "Kalıcı makyaj",
-    text: "Yorum alanı gerçek danışan geri bildirimleriyle güncellenecek.",
-    status: "Yakında"
+    title: "Google yorumu",
+    text: "Google Business profilinden gelen yorumlar izin ve kaynak bilgisiyle siteye eklenebilir."
   },
   {
-    name: "AŞK Beauty danışanı",
-    service: "Kaş & Kirpik",
-    text: "Onaylı yorumlar eklendiğinde bu bölüm otomatik olarak dolacak.",
-    status: "Yakında"
+    title: "Instagram geri bildirimi",
+    text: "DM veya gönderi yanıtı olarak gelen yorumlar, danışan onayı sonrası paylaşılabilir."
   },
   {
-    name: "AŞK Beauty danışanı",
-    service: "Cilt Bakımı ve Tırnak",
-    text: "Google, Instagram veya WhatsApp üzerinden gelen gerçek yorumlar burada sergilenebilir.",
-    status: "Yakında"
+    title: "WhatsApp mesajı",
+    text: "Randevu sonrası gelen memnuniyet mesajları kısa, sade ve izinli şekilde yayınlanabilir."
   }
+];
+
+export const reviewWorkflow = [
+  "Yorum metni alınır.",
+  "Danışandan site içinde paylaşım izni istenir.",
+  "Hizmet, kaynak ve tarih bilgisiyle data dosyasına eklenir."
 ];
