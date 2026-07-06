@@ -7,6 +7,7 @@ import { ExpertProfile } from "./components/ExpertProfile.js";
 import { Gallery, initGalleryFilters } from "./components/Gallery.js";
 import { ProductPreview } from "./components/ProductPreview.js";
 import { Experience } from "./components/Experience.js";
+import { PermanentMakeupGuide } from "./components/PermanentMakeupGuide.js";
 import { InteriorShowcase } from "./components/InteriorShowcase.js";
 import { Testimonials } from "./components/Testimonials.js";
 import { InstagramShowcase } from "./components/InstagramShowcase.js";
@@ -164,6 +165,7 @@ document.querySelector("#app").innerHTML = `
   <main>
     ${Hero()}
     ${renderServiceCategories()}
+    ${PermanentMakeupGuide()}
     ${renderWhy()}
     ${InteriorShowcase()}
     ${ExpertProfile()}
