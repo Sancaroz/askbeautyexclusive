@@ -105,7 +105,7 @@ function renderCredentials() {
       <div class="certificate-gallery">
         <figure class="certificate-wall">
           <img
-            src="assets/certificates/ask-beauty-certificate-wall.png"
+            src="assets/certificates/ask-beauty-certificate-wall.jpeg"
             alt="AŞK Beauty sertifika duvarı ve uzmanlık belgeleri"
             width="1402"
             height="1122"
@@ -131,7 +131,7 @@ function renderCredentials() {
         </figure>
         <figure class="certificate-wall">
           <img
-            src="assets/certificates/phicontour-artist-asiye-sebnem-kaymaz.png"
+            src="assets/certificates/phicontour-artist-asiye-sebnem-kaymaz.jpeg"
             alt="PhiContour Artist Asiye Şebnem Kaymaz sertifikası"
             width="1260"
             height="916"

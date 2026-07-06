@@ -316,7 +316,7 @@ export const featuredGallery = [
     title: "PhiContour Artist Sertifikası",
     label: "Certificate",
     category: "sertifika",
-    image: "assets/certificates/phicontour-artist-asiye-sebnem-kaymaz.png",
+    image: "assets/certificates/phicontour-artist-asiye-sebnem-kaymaz.jpeg",
     fit: "contain"
   }
 ];
