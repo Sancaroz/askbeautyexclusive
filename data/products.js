@@ -1,9 +1,9 @@
 export const productSettings = {
   enabled: true,
   commerceReady: false,
-  title: "Ürün seçkisi yakında",
-  intro: "Profesyonel bakım rutininizi destekleyecek salon onaylı ürünler için hazırlık yapıyoruz.",
-  note: "Satış aktif olduğunda ürün, stok, fiyat ve sipariş bağlantıları bu dosyadan yönetilecek."
+  title: "Salon bakımını ev ritüelinize taşıyan seçkiler yakında",
+  intro: "Profesyonel bakım rutininizi destekleyecek, özenle seçilmiş ürünler yakında bu alanda sunulacak.",
+  note: "Ürün seçkisi aktif olduğunda bakım ihtiyacınıza uygun öneriler ve sipariş yönlendirmeleri burada yer alacak."
 };
 
 export const productCollections = [

@@ -13,8 +13,8 @@ export function Gallery(items) {
     <section class="section gallery-section" id="galeri">
       <div class="section-heading">
         <p class="eyebrow">Galeri</p>
-        <h2>Uzmanlık belgeleri, salon hissi ve uygulama ilhamı.</h2>
-        <span>Gerçek uygulama ve öncesi-sonrası fotoğrafları eklendikçe bu alan büyüyecek.</span>
+        <h2>Uygulama detayları, salon atmosferi ve zarif sonuçlardan seçilmiş kareler.</h2>
+        <span>Her görsel; doğal görünüm, hijyenik uygulama ve kişiye özel estetik yaklaşımımızı yansıtır.</span>
       </div>
       <div class="gallery-filters" role="group" aria-label="Galeri filtreleri">
         ${filters.map(([value, label], index) => `
