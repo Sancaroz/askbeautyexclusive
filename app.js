@@ -10,6 +10,7 @@ import { Experience } from "./components/Experience.js";
 import { PermanentMakeupGuide } from "./components/PermanentMakeupGuide.js";
 import { SkinCareGuide } from "./components/SkinCareGuide.js";
 import { AppointmentCareGuide } from "./components/AppointmentCareGuide.js";
+import { ServiceMatchGuide } from "./components/ServiceMatchGuide.js";
 import { InteriorShowcase } from "./components/InteriorShowcase.js";
 import { Testimonials } from "./components/Testimonials.js";
 import { InstagramShowcase } from "./components/InstagramShowcase.js";
@@ -170,6 +171,7 @@ document.querySelector("#app").innerHTML = `
     ${PermanentMakeupGuide()}
     ${SkinCareGuide()}
     ${AppointmentCareGuide()}
+    ${ServiceMatchGuide()}
     ${renderWhy()}
     ${InteriorShowcase()}
     ${ExpertProfile()}
