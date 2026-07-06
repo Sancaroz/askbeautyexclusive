@@ -7,6 +7,19 @@ const slots = [
   "Akşamüstü"
 ];
 
+const histories = [
+  "Daha önce işlem yaptırmadım",
+  "Daha önce işlem yaptırdım",
+  "Emin değilim, analiz istiyorum"
+];
+
+const priorities = [
+  "İlk uygun randevu",
+  "Bu hafta içinde",
+  "Özel gün öncesi",
+  "Sadece bilgi almak istiyorum"
+];
+
 function serviceOptions() {
   return serviceCategories
     .flatMap(category => category.services.map(service => ({
@@ -17,8 +30,15 @@ function serviceOptions() {
     .join("");
 }
 
-function messageFor(serviceName, slot) {
-  return `Merhaba AŞK Beauty, ${serviceName} için ${slot.toLowerCase()} saatlerinde randevu almak istiyorum. Uygun günlerinizi paylaşır mısınız?`;
+function messageFor(serviceName, slot, history, priority, note = "") {
+  const cleanNote = note.trim();
+  const noteLine = cleanNote ? `\nNot: ${cleanNote}` : "";
+
+  return `Merhaba AŞK Beauty, ${serviceName} için randevu/bilgi almak istiyorum.
+Tercih ettiğim saat aralığı: ${slot}
+İşlem geçmişim: ${history}
+Randevu önceliğim: ${priority}${noteLine}
+Uygun gün ve saatlerinizi paylaşır mısınız?`;
 }
 
 export function AppointmentHelper() {
@@ -29,8 +49,8 @@ export function AppointmentHelper() {
     <section class="section appointment-helper" id="randevu">
       <div class="appointment-copy">
         <p class="eyebrow">Hızlı Randevu</p>
-        <h2>Randevu mesajınızı saniyeler içinde hazırlayın.</h2>
-        <p>Hizmet ve uygun saat aralığını seçin; WhatsApp mesajı otomatik hazırlansın.</p>
+        <h2>Randevu öncesi kısa bilgilerinizi tek mesajda hazırlayın.</h2>
+        <p>Hizmet, saat aralığı ve işlem geçmişinizi seçin; WhatsApp mesajınız daha net ve profesyonel hazırlansın.</p>
       </div>
 
       <div class="appointment-panel">
@@ -41,6 +61,22 @@ export function AppointmentHelper() {
           </select>
         </label>
 
+        <div class="appointment-field-grid">
+          <label>
+            <span>İşlem geçmişi</span>
+            <select data-appointment-history>
+              ${histories.map(item => `<option value="${item}">${item}</option>`).join("")}
+            </select>
+          </label>
+
+          <label>
+            <span>Randevu önceliği</span>
+            <select data-appointment-priority>
+              ${priorities.map(item => `<option value="${item}">${item}</option>`).join("")}
+            </select>
+          </label>
+        </div>
+
         <div class="appointment-slots" role="group" aria-label="Saat aralığı seçimi">
           ${slots.map((slot, index) => `
             <button class="${index === 0 ? "is-active" : ""}" type="button" data-appointment-slot="${slot}">
@@ -49,9 +85,14 @@ export function AppointmentHelper() {
           `).join("")}
         </div>
 
+        <label>
+          <span>Kısa not</span>
+          <textarea data-appointment-note rows="3" maxlength="180" placeholder="Örn: Daha önce dudak renklendirme yaptırdım, kontrol amaçlı bilgi almak istiyorum."></textarea>
+        </label>
+
         <a
           class="button button-primary"
-          href="${whatsappMessage(messageFor(firstService, firstSlot))}"
+          href="${whatsappMessage(messageFor(firstService, firstSlot, histories[0], priorities[0]))}"
           target="_blank"
           rel="noreferrer"
           data-appointment-link
@@ -72,6 +113,9 @@ export function initAppointmentHelper() {
   }
 
   const serviceSelect = helper.querySelector("[data-appointment-service]");
+  const historySelect = helper.querySelector("[data-appointment-history]");
+  const prioritySelect = helper.querySelector("[data-appointment-priority]");
+  const noteInput = helper.querySelector("[data-appointment-note]");
   const slotButtons = [...helper.querySelectorAll("[data-appointment-slot]")];
   const appointmentLink = helper.querySelector("[data-appointment-link]");
 
@@ -80,10 +124,19 @@ export function initAppointmentHelper() {
   }
 
   function updateLink() {
-    appointmentLink.href = whatsappMessage(messageFor(serviceSelect.value, selectedSlot()));
+    appointmentLink.href = whatsappMessage(messageFor(
+      serviceSelect.value,
+      selectedSlot(),
+      historySelect.value,
+      prioritySelect.value,
+      noteInput.value
+    ));
   }
 
   serviceSelect.addEventListener("change", updateLink);
+  historySelect.addEventListener("change", updateLink);
+  prioritySelect.addEventListener("change", updateLink);
+  noteInput.addEventListener("input", updateLink);
 
   slotButtons.forEach(button => {
     button.addEventListener("click", () => {
