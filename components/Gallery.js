@@ -1,13 +1,19 @@
 export function Gallery(items) {
   const imageAlt = item => item.alt || `${item.title} uygulama görseli - AŞK Beauty Büyükçekmece`;
   const filters = [
-    ["all", "Tümü"],
-    ["dudak", "Dudak"],
-    ["eyeliner", "Eyeliner"],
-    ["kas-kirpik", "Kaş & Kirpik"],
-    ["tirnak", "Tırnak"],
-    ["sertifika", "Sertifika"]
-  ];
+    { value: "all", label: "Tümü", hint: "Portfolyo" },
+    { value: "dudak", label: "Dudak", hint: "Renklendirme" },
+    { value: "eyeliner", label: "Eyeliner", hint: "Kalıcı makyaj" },
+    { value: "kas-kirpik", label: "Kaş & Kirpik", hint: "Bakış tasarımı" },
+    { value: "tirnak", label: "Tırnak", hint: "Nail art" },
+    { value: "salon", label: "Salon", hint: "Atmosfer" },
+    { value: "sertifika", label: "Sertifika", hint: "Uzmanlık" }
+  ].map(filter => ({
+    ...filter,
+    count: filter.value === "all"
+      ? items.length
+      : items.filter(item => item.category === filter.value).length
+  }));
 
   return `
     <section class="section gallery-section" id="galeri">
@@ -17,9 +23,11 @@ export function Gallery(items) {
         <span>Her görsel; doğal görünüm, hijyenik uygulama ve kişiye özel estetik yaklaşımımızı yansıtır.</span>
       </div>
       <div class="gallery-filters" role="group" aria-label="Galeri filtreleri">
-        ${filters.map(([value, label], index) => `
-          <button class="${index === 0 ? "is-active" : ""}" type="button" data-gallery-filter="${value}">
-            ${label}
+        ${filters.map((filter, index) => `
+          <button class="${index === 0 ? "is-active" : ""}" type="button" data-gallery-filter="${filter.value}">
+            <span>${filter.hint}</span>
+            <strong>${filter.label}</strong>
+            <small>${filter.count}</small>
           </button>
         `).join("")}
       </div>

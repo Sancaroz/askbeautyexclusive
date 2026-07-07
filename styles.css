@@ -1412,22 +1412,24 @@ h1 {
 }
 
 .gallery-filters {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 10px;
   margin: -12px 0 22px;
 }
 
 .gallery-filters button {
-  min-height: 42px;
-  padding: 10px 16px;
+  position: relative;
+  display: grid;
+  gap: 2px;
+  min-height: 82px;
+  padding: 14px 38px 14px 14px;
   border: 1px solid rgba(200, 164, 93, 0.28);
-  border-radius: 999px;
+  border-radius: 8px;
   color: var(--plum);
   background: rgba(255, 253, 251, 0.82);
   font: inherit;
-  font-size: 13px;
-  font-weight: 850;
+  text-align: left;
   cursor: pointer;
   transition:
     background 220ms ease,
@@ -1436,12 +1438,52 @@ h1 {
     transform 220ms ease;
 }
 
+.gallery-filters button span {
+  color: var(--gold-dark);
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.gallery-filters button strong {
+  color: inherit;
+  font-family: var(--font-serif);
+  font-size: 23px;
+  line-height: 0.95;
+}
+
+.gallery-filters button small {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: var(--gold-dark);
+  background: rgba(200, 164, 93, 0.14);
+  font-size: 11px;
+  font-weight: 850;
+}
+
 .gallery-filters button:hover,
 .gallery-filters button.is-active {
   border-color: rgba(122, 72, 128, 0.34);
   color: var(--white);
   background: linear-gradient(135deg, var(--plum), var(--mauve));
   transform: translateY(-1px);
+}
+
+.gallery-filters button:hover span,
+.gallery-filters button.is-active span {
+  color: #f2d695;
+}
+
+.gallery-filters button:hover small,
+.gallery-filters button.is-active small {
+  color: var(--ink);
+  background: #f2d695;
 }
 
 .gallery-item {
@@ -2238,7 +2280,9 @@ h1 {
   }
 
   .gallery-filters {
-    flex-wrap: nowrap;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(150px, 1fr);
+    grid-template-columns: none;
     margin-right: calc(var(--side-pad) * -1);
     padding-right: var(--side-pad);
     overflow-x: auto;
@@ -2247,10 +2291,6 @@ h1 {
 
   .gallery-filters::-webkit-scrollbar {
     display: none;
-  }
-
-  .gallery-filters button {
-    flex: 0 0 auto;
   }
 
   .makeup-guide-intro {

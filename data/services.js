@@ -306,6 +306,36 @@ export const featuredGallery = [
     image: "assets/gallery/13.jpeg"
   },
   {
+    title: "AŞK Beauty dış cephe",
+    label: "Salon",
+    category: "salon",
+    image: "assets/exterior/storefront.jpeg"
+  },
+  {
+    title: "Giriş ve hizmet panosu",
+    label: "Salon",
+    category: "salon",
+    image: "assets/exterior/entrance-sign.jpeg"
+  },
+  {
+    title: "Sertifikalı uygulama alanı",
+    label: "Salon",
+    category: "salon",
+    image: "assets/interior/salon-4.jpeg"
+  },
+  {
+    title: "Ferah salon atmosferi",
+    label: "Salon",
+    category: "salon",
+    image: "assets/interior/salon-1.jpeg"
+  },
+  {
+    title: "Hijyenik çalışma düzeni",
+    label: "Salon",
+    category: "salon",
+    image: "assets/interior/salon-3.jpeg"
+  },
+  {
     title: "PhiBrows Artist Sertifikası",
     label: "Certificate",
     category: "sertifika",
