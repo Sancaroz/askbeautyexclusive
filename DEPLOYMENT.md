@@ -53,3 +53,18 @@ Beklenen sonuç:
 - `www` adresi ana domaine yönlenir veya aynı siteyi açar.
 - SSL kilidi görünür.
 - GitHub Pages tarafında `Enforce HTTPS` açık olur.
+
+## Teknik SEO Kontrolü
+
+Yayın sonrası bu dosyaların açıldığı kontrol edilmeli:
+
+- `https://askbeautyexclusive.com/robots.txt`
+- `https://askbeautyexclusive.com/sitemap.xml`
+
+Search Console'da yalnızca şu sitemap gönderilmeli:
+
+```text
+sitemap.xml
+```
+
+Eğer daha önce yanlışlıkla ana sayfa veya `/` gönderildiyse, eski hatalı sitemap kaydı üç nokta menüsünden kaldırılabilir. Yeni sitemap ilk birkaç saat `Getirilemedi` görünebilir; DNS ve GitHub Pages yayını oturduktan sonra tekrar kontrol edilmelidir.

@@ -4,7 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://askbeautyexclusive.com/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -84,6 +84,14 @@
       <image:title>AŞK Beauty kalıcı eyeliner uygulaması</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/gallery/3.jpeg</image:loc>
+      <image:title>AŞK Beauty kalıcı eyeliner ve kaş tasarımı detayı</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://askbeautyexclusive.com/assets/gallery/7.jpeg</image:loc>
+      <image:title>AŞK Beauty kalıcı eyeliner uygulama sonucu</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://askbeautyexclusive.com/assets/gallery/14.jpeg</image:loc>
       <image:title>AŞK Beauty İpek Kirpik uygulaması</image:title>
     </image:image>
@@ -134,7 +142,7 @@
   </url>
   <url>
     <loc>https://askbeautyexclusive.com/links.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

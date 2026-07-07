@@ -13,6 +13,18 @@ https://askbeautyexclusive.com/sitemap.xml
 
 Not: Sitemap ana sayfayı, Instagram bağlantı sayfasını ve uygulama/salon/sertifika görsellerini içerir. Büyük görsel güncellemelerinden sonra Search Console'da sitemap yeniden gönderilebilir.
 
+Sitemap güncel adresi:
+
+```text
+https://askbeautyexclusive.com/sitemap.xml
+```
+
+Robots dosyası:
+
+```text
+https://askbeautyexclusive.com/robots.txt
+```
+
 5. Ana sayfa için URL denetimi yap:
 
 ```text
@@ -87,3 +99,21 @@ https://askbeautyexclusive.com/links.html
 ```
 
 Gönderi açıklamalarında dönem dönem web sitesi ve randevu linki kullanılmalı.
+
+## 5. Yayın Sonrası Haftalık Kontrol
+
+İlk yayın haftasında Google Search Console içinde şu alanlar kontrol edilmeli:
+
+- `Sayfa dizine ekleme`: Ana sayfa ve `links.html` için durum
+- `Site Haritaları`: `sitemap.xml` durumu başarılı mı?
+- `URL denetimi`: `https://askbeautyexclusive.com/` için canlı test
+- `Performans`: Hangi aramalar gösterim almaya başladı?
+
+Özellikle takip edilecek aramalar:
+
+- AŞK Beauty Büyükçekmece
+- Büyükçekmece Microblading
+- Büyükçekmece Dudak Renklendirme
+- Büyükçekmece Kaş Tasarımı
+- Büyükçekmece Cilt Bakımı
+- Büyükçekmece Protez Tırnak
