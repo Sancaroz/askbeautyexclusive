@@ -11,10 +11,14 @@ export const business = {
   appointmentPolicy: "Randevulu çalışıyoruz",
   paymentPolicy: "Ön ödeme alınmaz",
   address: "Turgut Özal Bulvarı, Fatih Mahallesi, Palmiye Meydanı 37/D, Büyükçekmece / İstanbul",
+  latitude: 41.017644,
+  longitude: 28.599078,
   mapUrl:
-    "https://www.google.com/maps?q=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mah.%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul&output=embed",
+    "https://www.google.com/maps?q=41.017644,28.599078&z=17&output=embed",
+  googleMapUrl:
+    "https://www.google.com/maps/search/?api=1&query=41.017644,28.599078",
   yandexMapUrl:
-    "https://yandex.com.tr/harita/?text=Turgut%20%C3%96zal%20Bulvar%C4%B1%20Fatih%20Mahallesi%20Palmiye%20Meydan%C4%B1%2037%2FD%20B%C3%BCy%C3%BCk%C3%A7ekmece%20%C4%B0stanbul"
+    "https://yandex.com.tr/harita/?ll=28.599078%2C41.017644&z=17&pt=28.599078%2C41.017644%2Cpm2rdm"
 };
 
 export function whatsappMessage(message) {

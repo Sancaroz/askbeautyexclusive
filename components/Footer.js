@@ -11,7 +11,8 @@ export function Footer() {
         <a href="${business.whatsappUrl}" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>${business.phoneDisplay}</strong></a>
         <a href="tel:${business.phoneHref}"><span>Telefon</span><strong>${business.phoneDisplay}</strong></a>
         <a href="${business.instagramUrl}" target="_blank" rel="noreferrer"><span>Instagram</span><strong>${business.instagramHandle}</strong></a>
-        <a href="${business.yandexMapUrl}" target="_blank" rel="noreferrer"><span>Yandex Harita</span><strong>${business.address}</strong></a>
+        <a href="${business.googleMapUrl}" target="_blank" rel="noreferrer"><span>Google Harita</span><strong>${business.address}</strong></a>
+        <a href="${business.yandexMapUrl}" target="_blank" rel="noreferrer"><span>Yandex Harita</span><strong>Koordinatlı yol tarifi</strong></a>
       </div>
       <div class="visit-info-grid" aria-label="Çalışma ve randevu bilgileri">
         <div><span>Çalışma Saatleri</span><strong>${business.workingHours}</strong></div>
