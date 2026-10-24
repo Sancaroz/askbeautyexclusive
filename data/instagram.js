@@ -4,6 +4,9 @@ export const instagramSettings = {
   enabled: true,
   handle: business.instagramHandle,
   profileUrl: business.instagramUrl,
+  // Cloudflare Worker endpoint'i eklendiğinde otomatik akış burada etkinleşir.
+  feedEndpoint: "",
+  maxPosts: 4,
   title: "Instagram'dan seçmeler",
   intro: "Güncel uygulama paylaşımları, salon duyuruları ve daha fazla sonuç görseli için Instagram hesabımızı takip edebilirsiniz."
 };
