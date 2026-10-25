@@ -18,7 +18,9 @@ function mapPost(post) {
     id: post.id,
     title: post.caption?.split("\n")[0]?.trim() || "AŞK Beauty çalışması",
     tag: isVideo ? "Instagram Reels" : "Instagram",
+    mediaType: post.media_type,
     image: isVideo ? post.thumbnail_url : post.media_url,
+    videoUrl: isVideo ? post.media_url : "",
     postUrl: post.permalink || ""
   };
 }

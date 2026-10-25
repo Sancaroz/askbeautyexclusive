@@ -11,12 +11,16 @@ const renderPosts = posts => posts.map(post => {
   const title = escapeHtml(post.title || "AŞK Beauty çalışması");
   const tag = escapeHtml(post.tag || "AŞK Beauty");
   const image = escapeHtml(post.image || "");
+  const videoUrl = escapeHtml(post.videoUrl || "");
   const href = escapeHtml(post.postUrl || instagramSettings.profileUrl);
   const alt = escapeHtml(post.alt || `${post.title || "AŞK Beauty"} ${post.tag || "çalışması"} - AŞK Beauty Instagram`);
+  const media = post.mediaType === "VIDEO" && videoUrl
+    ? `<video autoplay muted loop playsinline preload="metadata" aria-label="${alt}"><source src="${videoUrl}" type="video/mp4"></video>`
+    : `<img src="${image}" alt="${alt}" loading="lazy">`;
 
   return `
     <a class="instagram-card" href="${href}" target="_blank" rel="noreferrer" aria-label="${title} Instagram'da gör">
-      <img src="${image}" alt="${alt}" loading="lazy">
+      ${media}
       <span>${tag}</span>
       <strong>${title}</strong>
     </a>
