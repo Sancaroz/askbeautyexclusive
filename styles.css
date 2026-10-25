@@ -1702,6 +1702,26 @@ h1 {
   line-height: 0.98;
 }
 
+.instagram-audio-toggle {
+  position: absolute;
+  z-index: 2;
+  top: 14px;
+  right: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: #fffaf6;
+  background: rgba(46, 36, 48, 0.72);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.instagram-audio-toggle:hover {
+  background: rgba(46, 36, 48, 0.92);
+}
+
 .testimonials-section {
   padding-top: 42px;
 }

@@ -15,7 +15,7 @@ const renderPosts = posts => posts.map(post => {
   const href = escapeHtml(post.postUrl || instagramSettings.profileUrl);
   const alt = escapeHtml(post.alt || `${post.title || "AŞK Beauty"} ${post.tag || "çalışması"} - AŞK Beauty Instagram`);
   const media = post.mediaType === "VIDEO" && videoUrl
-    ? `<video autoplay muted loop playsinline preload="metadata" aria-label="${alt}"><source src="${videoUrl}" type="video/mp4"></video>`
+    ? `<video autoplay muted loop playsinline preload="metadata" aria-label="${alt}"><source src="${videoUrl}" type="video/mp4"></video><button class="instagram-audio-toggle" type="button" data-instagram-audio aria-label="Videonun sesini aç">Sesi aç</button>`
     : `<img src="${image}" alt="${alt}" loading="lazy">`;
 
   return `
@@ -79,4 +79,25 @@ export function initInstagramFeed() {
     .catch(() => {
       // API kullanılamadığında başlangıçta render edilen seçili gönderiler görünür kalır.
     });
+
+  feed.addEventListener("click", event => {
+    const button = event.target.closest("[data-instagram-audio]");
+    if (!button) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    const video = button.closest(".instagram-card")?.querySelector("video");
+    if (!video) {
+      return;
+    }
+
+    video.muted = !video.muted;
+    button.textContent = video.muted ? "Sesi aç" : "Sesi kapat";
+    button.setAttribute("aria-label", video.muted ? "Videonun sesini aç" : "Videonun sesini kapat");
+    button.setAttribute("aria-pressed", String(!video.muted));
+    video.play().catch(() => {});
+  });
 }
