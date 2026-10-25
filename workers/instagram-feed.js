@@ -36,7 +36,7 @@ export default {
     }
 
     const version = env.META_GRAPH_VERSION || DEFAULT_GRAPH_VERSION;
-    const graphUrl = new URL(`https://graph.facebook.com/${version}/${env.INSTAGRAM_USER_ID}/media`);
+    const graphUrl = new URL(`https://graph.instagram.com/${version}/${env.INSTAGRAM_USER_ID}/media`);
     graphUrl.searchParams.set("fields", "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp");
     graphUrl.searchParams.set("limit", "12");
     graphUrl.searchParams.set("access_token", env.INSTAGRAM_ACCESS_TOKEN);
