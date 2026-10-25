@@ -1,10 +1,10 @@
 export const testimonialSettings = {
   enabled: true,
   title: "Onaylı danışan yorumları",
-  intro: "AŞK Beauty'de yalnızca izin alınmış, gerçek danışan geri bildirimleri paylaşılır. İlk yorumlar geldikçe bu alan Google, Instagram veya WhatsApp kaynaklı içeriklerle güncellenecek.",
-  emptyTitle: "Yorum altyapısı hazır",
+  intro: "Gerçek danışan deneyimlerinden seçilen, izinli geri bildirimler.",
+  emptyTitle: "Deneyiminizi paylaşın",
   emptyText:
-    "Gerçek müşteri yorumları onay sonrası burada yayınlanacak. Bu bölüm sahte yorum kullanmaz; her yorum kaynak, hizmet ve izin bilgisiyle eklenir."
+    "AŞK Beauty deneyiminizi Google'da veya Instagram'da paylaşabilirsiniz. İzin verilen yorumlar burada kaynak bilgisiyle yayınlanır."
 };
 
 export const testimonials = [
@@ -23,15 +23,17 @@ export const testimonials = [
 export const reviewSources = [
   {
     title: "Google yorumu",
-    text: "Google Business profilinden gelen yorumlar izin ve kaynak bilgisiyle siteye eklenebilir."
+    text: "AŞK Beauty deneyiminizi Google'da paylaşın.",
+    url: "https://www.google.com/maps/search/?api=1&query=41.017644,28.599078"
   },
   {
     title: "Instagram geri bildirimi",
-    text: "DM veya gönderi yanıtı olarak gelen yorumlar, danışan onayı sonrası paylaşılabilir."
+    text: "Çalışmalarımızı Instagram'da keşfedin.",
+    url: "https://www.instagram.com/make.upbysebnemkaymaz/"
   },
   {
     title: "WhatsApp mesajı",
-    text: "Randevu sonrası gelen memnuniyet mesajları kısa, sade ve izinli şekilde yayınlanabilir."
+    text: "Deneyiminizi bizimle paylaşmak için iletişime geçin."
   }
 ];
 

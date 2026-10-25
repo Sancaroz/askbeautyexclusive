@@ -1757,6 +1757,15 @@ h1 {
   font-weight: 800;
 }
 
+.testimonial-source,
+.review-source-grid a {
+  color: var(--plum);
+  font-size: 12px;
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .testimonial-empty {
   display: flex;
   align-items: center;
@@ -1815,6 +1824,10 @@ h1 {
   margin: 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.review-source-grid a {
+  width: fit-content;
 }
 
 .review-workflow {

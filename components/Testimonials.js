@@ -26,6 +26,7 @@ export function Testimonials() {
                 <strong>${item.name}</strong>
                 <small>${item.service}${item.date ? ` · ${item.date}` : ""}</small>
               </div>
+              ${item.sourceUrl ? `<a class="testimonial-source" href="${item.sourceUrl}" target="_blank" rel="noreferrer">Kaynağı görüntüle</a>` : ""}
             </article>
           `).join("")}
         </div>
@@ -44,6 +45,7 @@ export function Testimonials() {
           <article>
             <span>${source.title}</span>
             <p>${source.text}</p>
+            ${source.url ? `<a href="${source.url}" target="_blank" rel="noreferrer">${source.title === "Google yorumu" ? "Google'da görüntüle" : "Instagram'da görüntüle"}</a>` : ""}
           </article>
         `).join("")}
       </div>
