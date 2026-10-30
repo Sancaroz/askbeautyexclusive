@@ -8,6 +8,7 @@ export function ServiceCard(service, categoryTitle) {
       <span class="service-category">${categoryTitle}</span>
       <h3>${service.name}</h3>
       <p>${service.description}</p>
+      ${service.products?.length ? `<span class="service-products"><strong>Kullanılan ürünler:</strong> ${service.products.join(" · ")}</span>` : ""}
       <div class="service-actions">
         <button class="text-link" type="button" data-service-detail="${service.name}" aria-label="${service.name} detaylı bilgi">Detaylı Bilgi</button>
         <a class="mini-button" href="${whatsappMessage(message)}" target="_blank" rel="noreferrer" aria-label="${service.name} randevu al">Randevu Al</a>

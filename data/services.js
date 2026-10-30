@@ -8,6 +8,7 @@ export const serviceCategories = [
       {
         name: "PhiBrows Microblading (Kıl Tekniği)",
         description: "Altın oran prensibiyle kaş formunu belirginleştiren doğal kıl tekniği uygulaması.",
+        products: ["PhiBrows"],
         facts: ["Altın oran ölçüm", "Doğal kıl görünümü", "Kişiye özel form"],
         details: [
           "Seyrek, formu belirsiz veya simetri desteği isteyen kaşlarda doğal kıl efekti hedeflenir.",
@@ -18,6 +19,7 @@ export const serviceCategories = [
       {
         name: "PhiContour Dudak Renklendirme",
         description: "Dudak tonunu canlandıran, yumuşak geçişli ve kişiye özel renk planlaması.",
+        products: ["PhiBrows", "Philips"],
         facts: ["Canlı renk tonu", "Yumuşak geçiş", "Doğal görünüm"],
         details: [
           "Soluk veya eşitsiz dudak tonunda daha canlı, dengeli ve doğal bir görünüm hedeflenir.",
@@ -28,6 +30,7 @@ export const serviceCategories = [
       {
         name: "PhiLiner Kalıcı Eyeliner",
         description: "Bakışlara netlik katan, ince ve zarif kalıcı eyeliner uygulaması.",
+        products: ["PhiBrows", "Philiner"],
         facts: ["Zarif hat", "Belirgin bakış", "Günlük konfor"],
         details: [
           "Göz formuna uygun ince ve zarif hat ile bakışlara daha net bir ifade kazandırılır.",
@@ -66,6 +69,7 @@ export const serviceCategories = [
       {
         name: "My Lamination Kaş Laminasyonu",
         description: "Vegan içerikle kaşları yukarı yönlü, dolgun ve düzenli gösteren bakım.",
+        products: ["MY Lamination Lifting"],
         facts: ["Vegan içerik", "Dolgun görünüm", "Düzenli kaş formu"],
         details: [
           "Dağınık, aşağı yönlü veya formunu kolay kaybeden kaşlarda daha düzenli görünüm sağlar.",
@@ -76,6 +80,7 @@ export const serviceCategories = [
       {
         name: "My Lamination Kirpik Laminasyonu",
         description: "Kirpiklere kıvrım, parlaklık ve bakım etkisi sağlayan vegan laminasyon.",
+        products: ["MY Lamination Lifting"],
         facts: ["Vegan içerik", "Kıvrık görünüm", "Bakım etkisi"],
         details: [
           "Doğal kirpiklere kıvrım, parlaklık ve daha açık bakış etkisi kazandırmayı hedefler.",
@@ -94,6 +99,7 @@ export const serviceCategories = [
       {
         name: "Klasik Cilt Bakımı (PLAYSKIN)",
         description: "Cildin ihtiyacı olan temel temizleme, arındırma ve nem desteğini sunan profesyonel bakım protokolü.",
+        products: ["Casmara", "PLAYSKIN"],
         facts: ["Derin temizlik", "Nem desteği", "Tüm cilt tipleri"],
         details: [
           "Sağlıklı ve ışıldayan bir cildin ilk adımı doğru temizleme ve düzenli bakımdır.",
@@ -105,6 +111,7 @@ export const serviceCategories = [
       {
         name: "CASMARA Kore Cam Cilt Bakımı",
         description: "Yoğun nem, vitamin ve antioksidan desteğiyle cam gibi parlak ve aydınlık cilt görünümünü hedefleyen bakım.",
+        products: ["Casmara", "PLAYSKIN"],
         facts: ["Cam cilt etkisi", "Yoğun nem", "Aydınlık görünüm"],
         details: [
           "Profesyonel CASMARA protokolleri ile cilt yoğun nem, vitamin ve antioksidan desteği alırken doğal ışıltısına kavuşur.",
@@ -116,6 +123,7 @@ export const serviceCategories = [
       {
         name: "REVCELL Özel Gün Bakımı",
         description: "Düğün, nişan, davet ve özel organizasyonlar öncesi cildi canlı, dolgun ve makyaja hazır gösteren flash bakım.",
+        products: ["Casmara", "PLAYSKIN"],
         facts: ["Flash bakım", "Makyaj öncesi hazırlık", "1-3 gün önce"],
         details: [
           "Düğün, nişan, mezuniyet, davet, doğum günü veya önemli bir organizasyon öncesinde cildi kusursuz görünüme hazırlayan profesyonel bakım protokolüdür.",
@@ -232,12 +240,6 @@ export const featuredGallery = [
     label: "Eyeliner",
     category: "eyeliner",
     image: "assets/gallery/17.jpeg"
-  },
-  {
-    title: "Kalıcı Eyeliner",
-    label: "Eyeliner",
-    category: "eyeliner",
-    image: "assets/gallery/18.jpeg"
   },
   {
     title: "Kalıcı Eyeliner",

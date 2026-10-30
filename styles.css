@@ -435,6 +435,18 @@ h1 {
   color: var(--muted);
 }
 
+.service-products {
+  display: block;
+  color: var(--plum);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.service-products strong {
+  color: var(--ink);
+  font-weight: 800;
+}
+
 .service-actions {
   align-self: end;
   align-items: center;
@@ -2151,6 +2163,27 @@ h1 {
 .service-detail-copy p {
   margin: 0;
   color: var(--muted);
+}
+
+.service-detail-products {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 14px 16px;
+  border-left: 2px solid var(--gold-dark);
+  background: rgba(200, 164, 93, 0.08);
+}
+
+.service-detail-products strong {
+  color: var(--ink);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.service-detail-products span {
+  color: var(--plum);
+  font-weight: 800;
 }
 
 .service-detail-meta {

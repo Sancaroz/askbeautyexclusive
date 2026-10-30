@@ -32,6 +32,7 @@ function renderModalContent(service) {
     <div class="service-detail-copy">
       ${details.map(item => `<p>${item}</p>`).join("")}
     </div>
+    ${service.products?.length ? `<p class="service-detail-products"><strong>Kullanılan profesyonel ürünler</strong><span>${service.products.join(" · ")}</span></p>` : ""}
     <div class="service-detail-meta">
       ${facts.map(item => `<span>${item}</span>`).join("")}
     </div>
