@@ -15,7 +15,7 @@ const renderPosts = posts => posts.map(post => {
   const href = escapeHtml(post.postUrl || instagramSettings.profileUrl);
   const alt = escapeHtml(post.alt || `${post.title || "AŞK Beauty"} ${post.tag || "çalışması"} - AŞK Beauty Instagram`);
   const media = post.mediaType === "VIDEO" && videoUrl
-    ? `<video autoplay muted loop playsinline preload="metadata" aria-label="${alt}"><source src="${videoUrl}" type="video/mp4"></video><button class="instagram-audio-toggle" type="button" data-instagram-audio aria-label="Videonun sesini aç">Sesi aç</button>`
+    ? `<video autoplay muted loop playsinline preload="metadata" aria-label="${alt}"><source src="${videoUrl}" type="video/mp4"></video><span class="instagram-media-badge" aria-label="Reels video">▶</span><button class="instagram-audio-toggle" type="button" data-instagram-audio aria-label="Videonun sesini aç">Sesi aç</button>`
     : `<img src="${image}" alt="${alt}" loading="lazy">`;
 
   return `
@@ -32,8 +32,6 @@ export function InstagramShowcase() {
     return "";
   }
 
-  const imageAlt = post => post.alt || `${post.title} ${post.tag} paylaşımı - AŞK Beauty Instagram`;
-
   return `
     <section class="section instagram-section" id="instagram">
       <div class="instagram-head">
@@ -49,6 +47,10 @@ export function InstagramShowcase() {
 
       <div class="instagram-grid" data-instagram-feed>
         ${renderPosts(instagramPosts)}
+      </div>
+      <div class="instagram-cta">
+        <p>Siz de güzellik deneyiminizi bizimle planlayın.</p>
+        <a class="button button-primary" href="#randevu">Randevu Al</a>
       </div>
     </section>
   `;

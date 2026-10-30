@@ -6,9 +6,9 @@ export const instagramSettings = {
   profileUrl: business.instagramUrl,
   // Cloudflare Worker endpoint'i eklendiğinde otomatik akış burada etkinleşir.
   feedEndpoint: "https://ask-beauty-instagram-feed.robologai.workers.dev/",
-  maxPosts: 4,
-  title: "Instagram'dan seçmeler",
-  intro: "Güncel uygulama paylaşımları, salon duyuruları ve daha fazla sonuç görseli için Instagram hesabımızı takip edebilirsiniz."
+  maxPosts: 6,
+  title: "Güzellik Günlüğümüz",
+  intro: "En yeni uygulamalarımızı, güzellik dünyamızdan anları ve ilham veren çalışmalarımızı keşfedin."
 };
 
 export const instagramPosts = [
@@ -34,6 +34,18 @@ export const instagramPosts = [
     title: "Nail art ilhamı",
     image: "assets/gallery/13.jpeg",
     tag: "Tırnak",
+    postUrl: ""
+  },
+  {
+    title: "Salon deneyimi",
+    image: "assets/interior/salon-1.jpeg",
+    tag: "AŞK Beauty",
+    postUrl: ""
+  },
+  {
+    title: "Bakım ve ışıltı",
+    image: "assets/gallery/19.jpeg",
+    tag: "Cilt Bakımı",
     postUrl: ""
   }
 ];

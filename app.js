@@ -168,6 +168,8 @@ document.querySelector("#app").innerHTML = `
   <main>
     ${Hero()}
     ${renderServiceCategories()}
+    ${InstagramShowcase()}
+    ${Testimonials()}
     ${PermanentMakeupGuide()}
     ${SkinCareGuide()}
     ${AppointmentCareGuide()}
@@ -179,8 +181,6 @@ document.querySelector("#app").innerHTML = `
     ${LocalSeo()}
     ${renderCredentials()}
     ${Gallery(featuredGallery)}
-    ${InstagramShowcase()}
-    ${Testimonials()}
     ${ProductPreview()}
     ${AppointmentHelper()}
     ${CTA()}
